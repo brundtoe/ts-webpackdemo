@@ -18,7 +18,7 @@ const webpackConfig = {
   output: {
     hashDigestLength: 8,
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name][hash].js'
+    filename: '[name][contenthash].js'
   },
   devServer: {
     contentBase: path.resolve(__dirname, './dist'),
@@ -66,7 +66,7 @@ const webpackConfig = {
       template: path.resolve(__dirname,'./src/page-index/tmpl.html')
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
+      filename: '[name].[contenthash].css',
       chunkFilename: '[id].css'
     }),
     new CopyWebpackPlugin(
