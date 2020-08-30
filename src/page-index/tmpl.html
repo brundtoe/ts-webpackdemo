@@ -10,8 +10,20 @@
         content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 </head>
 <body>
-<h1>Welcome to Webpack with TypeScript</h1>
-<div id="data"></div>
+<div id="wrapper">
+  <header id="header">
+    <h1 id="data"></h1>
+  </header>
+  <section id="includedMenu">
+    <%= require('html-loader!../partials/menu.html') %>
+  </section>
+  <section id="includedWidget">
+    <%= require('html-loader!../partials/defaultWidget.html') %>
+  </section>
+  <main class="rounded shadow">
+    <%= require('html-loader!../partials/index-main.html') %>
+  </main>
+</div>
 
 </body>
 </html>
