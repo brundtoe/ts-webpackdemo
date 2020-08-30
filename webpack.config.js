@@ -1,9 +1,9 @@
-//const webpack = require('webpack');
-const path = require('path');
+const webpack = require('webpack');
+const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const {CleanWebpackPlugin} = require("clean-webpack-plugin")
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 const webpackConfig = {
   mode: 'development',
@@ -13,12 +13,12 @@ const webpackConfig = {
   },
   devtool: 'eval-cheap-module-source-map',
   entry: {
-    index: path.resolve(__dirname,'./src/page-index/main.ts'),
+    index: path.resolve(__dirname, './src/page-index/main.ts'),
   },
   output: {
     hashDigestLength: 8,
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name][contenthash].js'
+    filename: '[name][hash].js'
   },
   devServer: {
     contentBase: path.resolve(__dirname, './dist'),
@@ -33,7 +33,16 @@ const webpackConfig = {
       },
       {
         test: [/\.css$|.scss$/],
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+        use: [MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              plugins: [require('autoprefixer')()]
+            }
+          },
+          'sass-loader']
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -43,7 +52,7 @@ const webpackConfig = {
             options: {
               limit: 8192,
               name: '[name].[hash:8].[ext]',
-              outputPath: path.resolve(__dirname,'./dist/assets/images')
+              outputPath: path.resolve(__dirname, './dist/assets/images')
             }
           }
         ]
@@ -60,29 +69,36 @@ const webpackConfig = {
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new webpack.ProvidePlugin(
+      {
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
+      }
+    ),
     new HtmlWebPackPlugin({
       title: 'TS Webpack',
       filename: 'index.html',
-      template: path.resolve(__dirname,'./src/page-index/tmpl.html')
+      template: path.resolve(__dirname, './src/page-index/tmpl.html')
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
+      filename: '[name].[hash].css',
       chunkFilename: '[id].css'
     }),
     new CopyWebpackPlugin(
       {
         patterns: [
           {
-            from: path.resolve(__dirname,'./src/assets/images'),
-            to: path.resolve(__dirname,'./dist/assets/images')
+            from: path.resolve(__dirname, './src/assets/images'),
+            to: path.resolve(__dirname, './dist/assets/images')
           },
           {
-            from: path.resolve(__dirname,'./src/assets/data'),
-            to: path.resolve(__dirname,'./dist/assets/data')
+            from: path.resolve(__dirname, './src/assets/data'),
+            to: path.resolve(__dirname, './dist/assets/data')
           }
         ]
       }),
   ]
 }
 
-module.exports = webpackConfig;
+module.exports = webpackConfig
