@@ -4,7 +4,7 @@ import 'bootstrap'
 import '../scss/index.scss'
 import './page.scss'
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', (e) => {
   docElement.render('data','<strong>Hello Webpack from TypeScript</strong>')
   console.log('DOMContentLoaded', 'page-index')
   $('#alert').on('click', () => {

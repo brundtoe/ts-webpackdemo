@@ -1,19 +1,21 @@
-const webpack = require('webpack');
+const webpack = require('webpack')
 const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const glob = require('glob')
 
 const webpackConfig = {
-  mode: 'development',
+  mode: 'production',
   watch: true,
   watchOptions: {
     ignored: /node_modules/
   },
   devtool: 'eval-cheap-module-source-map',
   entry: {
-    index: path.resolve(__dirname, './src/page-index/main.ts'),
+    index: path.resolve(__dirname, './src/page-index/index.ts'),
+    another: path.resolve(__dirname, './src/page-another/another.ts')
   },
   output: {
     hashDigestLength: 8,
@@ -76,11 +78,6 @@ const webpackConfig = {
         'window.jQuery': 'jquery'
       }
     ),
-    new HtmlWebPackPlugin({
-      title: 'TS Webpack',
-      filename: 'index.html',
-      template: path.resolve(__dirname, './src/page-index/tmpl.html')
-    }),
     new MiniCssExtractPlugin({
       filename: '[name].[hash].css',
       chunkFilename: '[id].css'
@@ -98,7 +95,24 @@ const webpackConfig = {
           }
         ]
       }),
-  ]
+  ],
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  }
 }
+
+const files = ['index', 'another']
+
+files.forEach((file) => {
+  webpackConfig.plugins.push(
+    new HtmlWebPackPlugin({
+      filename: `${file}.html`,
+      template: path.resolve(__dirname, `./src/page-${file}/tmpl.html`),
+      chunks: [file.replace(/-(\w)/g, (match, c) => c.toLowerCase())]
+    })
+  )
+})
 
 module.exports = webpackConfig
