@@ -1,6 +1,8 @@
 //const webpack = require('webpack');
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const {CleanWebpackPlugin} = require("clean-webpack-plugin")
 
 const webpackConfig = {
@@ -10,8 +12,9 @@ const webpackConfig = {
     index: path.resolve(__dirname,'./src/page-index/main.ts'),
   },
   output: {
+    hashDigestLength: 8,
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js'
+    filename: '[name][contenthash].js'
   },
   devServer: {
     contentBase: path.resolve(__dirname, './dist'),
@@ -24,13 +27,22 @@ const webpackConfig = {
         loader: 'ts-loader',
         exclude: /node_modules/
       },
-      /**
       {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: 'babel-loader'
+        test: [/\.css$|.scss$/],
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: path.resolve(__dirname,'./dist/assets/images')
+            }
+          }
+        ]
       }
-       */
     ]
   },
   resolve: {
@@ -47,7 +59,24 @@ const webpackConfig = {
       title: 'TS Webpack',
       filename: 'index.html',
       template: path.resolve(__dirname,'./src/page-index/tmpl.html')
-    })
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css',
+      chunkFilename: '[id].css'
+    }),
+    new CopyWebpackPlugin(
+      {
+        patterns: [
+          {
+            from: path.resolve(__dirname,'./src/assets/images'),
+            to: path.resolve(__dirname,'./dist/assets/images')
+          },
+          {
+            from: path.resolve(__dirname,'./src/assets/data'),
+            to: path.resolve(__dirname,'./dist/assets/data')
+          }
+        ]
+      }),
   ]
 }
 
