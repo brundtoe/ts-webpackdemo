@@ -6,15 +6,19 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const {CleanWebpackPlugin} = require("clean-webpack-plugin")
 
 const webpackConfig = {
-  mode: 'production',
-  devtool: 'eval-cheap-module-source-map',
+  mode: 'development',
+  watch: true,
+  watchOptions: {
+    ignored: /node_modules/
+  },
+  devtool: 'cheap-module-eval-source-map',
   entry: {
     index: path.resolve(__dirname,'./src/page-index/main.ts'),
   },
   output: {
     hashDigestLength: 8,
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name][contenthash].js'
+    filename: '[name][hash].js'
   },
   devServer: {
     contentBase: path.resolve(__dirname, './dist'),
@@ -61,7 +65,7 @@ const webpackConfig = {
       template: path.resolve(__dirname,'./src/page-index/tmpl.html')
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
+      filename: '[name].[hash].css',
       chunkFilename: '[id].css'
     }),
     new CopyWebpackPlugin(
