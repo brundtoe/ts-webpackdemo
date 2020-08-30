@@ -6,4 +6,5 @@ class docClass {
         }
     }
 }
-export default new docClass()
+const docElement = new docClass()
+export default docElement

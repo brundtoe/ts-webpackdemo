@@ -1,6 +1,6 @@
-import docClass from '../modules/renderElement'
+import docElement from '../modules/renderElement'
 
 document.addEventListener('DOMContentLoaded', () => {
-  docClass.render('data','<strong>Hello Webpack</strong>')
+  docElement.render('data','<strong>Hello Webpack</strong>')
   console.log('DOMContentLoaded', 'page-index')
 })
