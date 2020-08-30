@@ -1,0 +1,17 @@
+$h2-bg-color: yellow;
+$h2-width: 400px;
+$table-border-color: green;
+
+h2 {
+  background-color: $h2-bg-color;
+  width: $h2-width;
+}
+
+table, th, td {
+  border: 1px solid $table-border-color;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+}

@@ -1,0 +1,995 @@
+[
+  {
+    "id": 1,
+    "name": "Skagen",
+    "zipcode": 9990,
+    "municipality": "Frederikshavn",
+    "region": "Nordjylland",
+    "lat": 57.723661,
+    "long": 10.592629,
+    "citizens": 8003
+  },
+  {
+    "id": 2,
+    "name": "Frederikshavn",
+    "zipcode": 9900,
+    "municipality": "Frederikshavn",
+    "region": "Nordjylland",
+    "lat": 57.434336,
+    "long": 10.535442,
+    "citizens": 23296
+  },
+  {
+    "id": 3,
+    "name": "Aalborg",
+    "zipcode": 9000,
+    "municipality": "Aalborg",
+    "region": "Nordjylland",
+    "lat": 57.048177,
+    "long": 9.921098,
+    "citizens": 8003
+  },
+  {
+    "id": 4,
+    "name": "Gistrup",
+    "zipcode": 9260,
+    "municipality": "Aalborg",
+    "region": "Nordjylland",
+    "lat": 56.997740,
+    "long": 9.993378,
+    "citizens": 3562
+  },
+  {
+    "id": 5,
+    "name": "Nibe",
+    "zipcode": 9240,
+    "municipality": "Aalborg",
+    "region": "Nordjylland",
+    "lat": 56.982376,
+    "long": 9.639181,
+    "citizens": 5249
+  },
+  {
+    "id": 6,
+    "name": "Holstebro",
+    "zipcode": 7500,
+    "municipality": "Holstebro",
+    "region": "Midtjylland",
+    "lat": 56.366667,
+    "long": 8.616667,
+    "citizens": 58504
+  },
+  {
+    "id": 7,
+    "name": "Fredericia",
+    "zipcode": 7000,
+    "municipality": "Fredericia",
+    "region": "Syddanmark",
+    "lat": 55.569108,
+    "long": 9.743121,
+    "citizens": 51427
+  },
+  {
+    "id": 8,
+    "name": "Vejle",
+    "zipcode": 7100,
+    "municipality": "Vejle",
+    "region": "Syddanmark",
+    "lat": 55.708333,
+    "long": 9.533333,
+    "citizens": 56567
+  },
+  {
+    "id": 9,
+    "name": "Sønderborg",
+    "zipcode": 6400,
+    "municipality": "Sønderborg",
+    "region": "Syddanmark",
+    "lat": 54.910931,
+    "long": 9.775241,
+    "citizens": 27801
+  },
+  {
+    "id": 10,
+    "name": "Tønder",
+    "zipcode": 6270,
+    "municipality": "Tønder",
+    "region": "Syddanmark",
+    "lat": 54.947366,
+    "long": 8.871812,
+    "citizens": 7672
+  },
+  {
+    "id": 11,
+    "name": "Agerskov",
+    "zipcode": 6524,
+    "municipality": "Tønder",
+    "region": "Syddanmark",
+    "lat": 55.130067,
+    "long": 9.129332,
+    "citizens": 1223
+  },
+  {
+    "id": 12,
+    "name": "Bredebro",
+    "zipcode": 6261,
+    "municipality": "Tønder",
+    "region": "Syddanmark",
+    "lat": 55.058337,
+    "long": 8.829244,
+    "citizens": 1430
+  },
+  {
+    "id": 13,
+    "name": "Løgum Kloster",
+    "zipcode": 6240,
+    "municipality": "Tønder",
+    "region": "Syddanmark",
+    "lat": 55.063625,
+    "long": 8.955735,
+    "citizens": 3594
+  },
+  {
+    "id": 14,
+    "name": "Herning",
+    "zipcode": 7400,
+    "municipality": "Herning",
+    "region": "Midtjylland",
+    "lat": 56.136111,
+    "long": 8.976667,
+    "citizens": 50039
+  },
+  {
+    "id": 15,
+    "name": "Ikast",
+    "zipcode": 7430,
+    "municipality": "Ikast-Brande",
+    "region": "Midtjylland",
+    "lat": 56.136667,
+    "long": 9.161667,
+    "citizens": 15626
+  },
+  {
+    "id": 16,
+    "name": "Brande",
+    "zipcode": 7330,
+    "municipality": "Ikast-Brande",
+    "region": "Midtjylland",
+    "lat": 55.944167,
+    "long": 9.126389,
+    "citizens": 7307
+  },
+  {
+    "id": 17,
+    "name": "Nørre Snede",
+    "zipcode": 8766,
+    "municipality": "Ikast-Brande",
+    "region": "Midtjylland",
+    "lat": 55.963889,
+    "long": 9.398611,
+    "citizens": 1819
+  },
+  {
+    "id": 18,
+    "name": "Aarhus",
+    "zipcode": 8000,
+    "municipality": "Aarhus",
+    "region": "Midtjylland",
+    "lat": 56.156610,
+    "long": 10.210190,
+    "citizens": 277971
+  },
+  {
+    "id": 19,
+    "name": "Tranbjerg",
+    "zipcode": 8310,
+    "municipality": "Aarhus",
+    "region": "Midtjylland",
+    "lat": 56.095833,
+    "long": 10.136111,
+    "citizens": 9757
+  },
+  {
+    "id": 20,
+    "name": "Lystup",
+    "zipcode": 8520,
+    "municipality": "Aarhus",
+    "region": "Midtjylland",
+    "lat": 56.234318,
+    "long": 10.230059,
+    "citizens": 10425
+  },
+  {
+    "id": 21,
+    "name": "Odense",
+    "zipcode": 5000,
+    "municipality": "Odense",
+    "region": "Syddanmark",
+    "lat": 55.401313,
+    "long": 10.387085,
+    "citizens": 179601
+  },
+  {
+    "id": 22,
+    "name": "Middelfart",
+    "zipcode": 5500,
+    "municipality": "Middelfart",
+    "region": "Syddanmark",
+    "lat": 55.500000,
+    "long": 9.733333,
+    "citizens": 15540
+  },
+  {
+    "id": 23,
+    "name": "Assens",
+    "zipcode": 5610,
+    "municipality": "Assens",
+    "region": "Syddanmark",
+    "lat": 55.269167,
+    "long": 9.899722,
+    "citizens": 6155
+  },
+  {
+    "id": 24,
+    "name": "Fåborg",
+    "zipcode": 5600,
+    "municipality": "Fåborg-Midtfyn",
+    "region": "Syddanmark",
+    "lat": 55.095000,
+    "long": 10.242222,
+    "citizens": 7049
+  },
+  {
+    "id": 25,
+    "name": "Svendborg",
+    "zipcode": 5700,
+    "municipality": "Svendborg",
+    "region": "Syddanmark",
+    "lat": 55.059722,
+    "long": 10.610000,
+    "citizens": 27210
+  },
+  {
+    "id": 26,
+    "name": "Nyborg",
+    "zipcode": 5800,
+    "municipality": "Nyborg",
+    "region": "Syddanmark",
+    "lat": 55.312222,
+    "long": 10.789722,
+    "citizens": 17164
+  },
+  {
+    "id": 27,
+    "name": "Kerteminde",
+    "zipcode": 5300,
+    "municipality": "Kerteminde",
+    "region": "Syddanmark",
+    "lat": 55.449444,
+    "long": 10.660278,
+    "citizens": 5914
+  },
+  {
+    "id": 28,
+    "name": "Bogense",
+    "zipcode": 5400,
+    "municipality": "Nordfyn",
+    "region": "Syddanmark",
+    "lat": 55.566667,
+    "long": 10.088889,
+    "citizens": 3891
+  },
+  {
+    "id": 29,
+    "name": "Rønne",
+    "zipcode": 3700,
+    "municipality": "Bornholm",
+    "region": "Hovdstaden",
+    "lat": 55.1,
+    "long": 14.7,
+    "citizens": 13780
+  },
+  {
+    "id": 30,
+    "name": "Hasle",
+    "zipcode": 3790,
+    "municipality": "Bornhom",
+    "region": "Hovedstaden",
+    "lat": 55.182778,
+    "long": 14.709722,
+    "citizens": 1622
+  },
+  {
+    "id": 31,
+    "name": "Gudhjem",
+    "zipcode": 3760,
+    "municipality": "Bornholm",
+    "region": "Hovedstaden",
+    "lat": 55.208333,
+    "long": 14.972222,
+    "citizens": 723
+  },
+  {
+    "id": 32,
+    "name": "Svaneke",
+    "zipcode": 3740,
+    "municipality": "Bornholm",
+    "region": "Hovedstaden",
+    "lat": 55.136667,
+    "long": 15.142778,
+    "citizens": 1078
+  },
+  {
+    "id": 33,
+    "name": "Nexø",
+    "zipcode": 3730,
+    "municipality": "Bornholm",
+    "region": "Hovdstaden",
+    "lat": 55.063611,
+    "long": 15.132222,
+    "citizens": 3644
+  },
+  {
+    "id": 34,
+    "name": "Åkirkeby",
+    "zipcode": 3720,
+    "municipality": "Bornholm",
+    "region": "Hovedstaden",
+    "lat": 55.072222,
+    "long": 14.922778,
+    "citizens": 2083
+  },
+  {
+    "id": 35,
+    "name": "Nykøbing F",
+    "zipcode": 4800,
+    "municipality": "Guldborgsund",
+    "region": "Sjælland",
+    "lat": 54.766667,
+    "long": 11.883333,
+    "citizens": 16770
+  },
+  {
+    "id": 36,
+    "name": "Gedser",
+    "zipcode": 4874,
+    "municipality": "Guldborgsund",
+    "region": "Sjælland",
+    "lat": 54.57558,
+    "long": 11.929830,
+    "citizens": 731
+  },
+  {
+    "id": 37,
+    "name": "Horbelev",
+    "zipcode": 4871,
+    "municipality": "Guldborgsund",
+    "region": "Sjælland",
+    "lat": 54.827241,
+    "long": 12.056480,
+    "citizens": 583
+  },
+  {
+    "id": 38,
+    "name": "Stubbekøbing",
+    "zipcode": 4850,
+    "municipality": "Guldborgsund",
+    "region": "SJælland",
+    "lat": 54.889722,
+    "long": 12.0375,
+    "citizens": 2304
+  },
+  {
+    "id": 39,
+    "name": "Saxkøbing",
+    "zipcode": 4990,
+    "municipality": "Guldborgsund",
+    "region": "Sjælland",
+    "lat": 58.4,
+    "long": 11.633333,
+    "citizens": 4670
+  },
+  {
+    "id": 40,
+    "name": "Maribo",
+    "zipcode": 4930,
+    "municipality": "Lolland",
+    "region": "Sjælland",
+    "lat": 54.774722,
+    "long": 11.501111,
+    "citizens": 5830
+  },
+  {
+    "id": 41,
+    "name": "Rødby",
+    "zipcode": 4970,
+    "municipality": "Lolland",
+    "region": "Sjælland",
+    "lat": 54.693611,
+    "long": 11.388333,
+    "citizens": 2066
+  },
+  {
+    "id": 42,
+    "name": "Nakskov",
+    "zipcode": 4900,
+    "municipality": "Lolland",
+    "region": "Sjælland",
+    "lat": 54.829722,
+    "long": 11.135556,
+    "citizens": 12691
+  },
+  {
+    "id": 43,
+    "name": "Korsør",
+    "zipcode": 4220,
+    "municipality": "Slagelse",
+    "region": "Sjælland",
+    "lat": 55.330458,
+    "long": 11.142497,
+    "citizens": 14647
+  },
+  {
+    "id": 44,
+    "name": "Slagelse",
+    "zipcode": 4200,
+    "municipality": "Slagelse",
+    "region": "Sjælland",
+    "lat": 55.400833,
+    "long": 11.35,
+    "citizens": 33871
+  },
+  {
+    "id": 45,
+    "name": "Skælskør",
+    "zipcode": 4230,
+    "municipality": "Slagelse",
+    "region": "Sjælland",
+    "lat": 55.253889,
+    "long": 11.290278,
+    "citizens": 6470
+  },
+  {
+    "id": 46,
+    "name": "Kallundborg",
+    "zipcode": 4400,
+    "municipality": "Kalundborg",
+    "region": "Sjælland",
+    "lat": 55.681389,
+    "long": 11.085000,
+    "citizens": 16370
+  },
+  {
+    "id": 47,
+    "name": "Nykøbing S",
+    "zipcode": 4500,
+    "municipality": "Odsherred",
+    "region": "Sjælland",
+    "lat": 55.922500,
+    "long": 11.668611,
+    "citizens": 5194
+  },
+  {
+    "id": 48,
+    "name": "Vig",
+    "zipcode": 4560,
+    "municipality": "Odsherrede",
+    "region": "Sjælland",
+    "lat": 55.851667,
+    "long": 11.581389,
+    "citizens": 1539
+  },
+  {
+    "id": 49,
+    "name": "Holbæk",
+    "zipcode": 43000,
+    "municipality": "Holbæk",
+    "region": "Sjælland",
+    "lat": 55.719444,
+    "long": 11.713333,
+    "citizens": 28538
+  },
+  {
+    "id": 50,
+    "name": "Svinninge",
+    "zipcode": 4520,
+    "municipality": "Holbæk",
+    "region": "Sjælland",
+    "lat": 55.721667,
+    "long": 11.456667,
+    "citizens": 2873
+  },
+  {
+    "id": 51,
+    "name": "Tølløse",
+    "zipcode": 4340,
+    "municipality": "Holbæk",
+    "region": "Sjælland",
+    "lat": 55.611667,
+    "long": 11.773611,
+    "citizens": 3798
+  },
+  {
+    "id": 52,
+    "name": "Sorø",
+    "zipcode": 4180,
+    "municipality": "Sorø",
+    "region": "Sjælland",
+    "lat": 55.438477,
+    "long": 11.559951,
+    "citizens": 7958
+  },
+  {
+    "id": 53,
+    "name": "Ringsted",
+    "zipcode": 4100,
+    "municipality": "Ringsted",
+    "region": "Sjælland",
+    "lat": 55.442593,
+    "long": 11.790031,
+    "citizens": 22657
+  },
+  {
+    "id": 54,
+    "name": "Næstved",
+    "zipcode": 4700,
+    "municipality": "Næstved",
+    "region": "Sjælland",
+    "lat": 55.229444,
+    "long": 11.756667,
+    "citizens": 43440
+  },
+  {
+    "id": 55,
+    "name": "Vordingborg",
+    "zipcode": 4760,
+    "municipality": "Vordingborg",
+    "region": "Sjælland",
+    "lat": 55.011111,
+    "long": 11.908333,
+    "citizens": 12005
+  },
+  {
+    "id": 56,
+    "name": "Køge",
+    "zipcode": 4600,
+    "municipality": "Køge",
+    "region": "Sjælland",
+    "lat": 55.456111,
+    "long": 12.179722,
+    "citizens": 37557
+  },
+  {
+    "id": 57,
+    "name": "Herfølge",
+    "zipcode": 4681,
+    "municipality": "Køge",
+    "region": "Sjælland",
+    "lat": 55.416111,
+    "long": 12.141944,
+    "citizens": 7000
+  },
+  {
+    "id": 58,
+    "name": "Roskilde",
+    "zipcode": 4000,
+    "municipality": "Roskilde",
+    "region": "Sjælland",
+    "lat": 55.641667,
+    "long": 12.080833,
+    "citizens": 51121
+  },
+  {
+    "id": 59,
+    "name": "Jyllinge",
+    "zipcode": 4040,
+    "municipality": "Roskilde",
+    "region": "Sjælland",
+    "lat": 55.751060,
+    "long": 12.106421,
+    "citizens": 10105
+  },
+  {
+    "id": 60,
+    "name": "København",
+    "zipcode": 1016,
+    "municipality": "København",
+    "region": "Hovedstaden",
+    "lat": 55.676111,
+    "long": 12.568889,
+    "citizens": 613288
+  },
+  {
+    "id": 61,
+    "name": "Frederiksberg",
+    "zipcode": 2000,
+    "municipality": "Frederiksberg",
+    "region": "Hovedstaden",
+    "lat": 55.677500,
+    "long":  12.533889,
+    "citizens": 103960
+  },
+  {
+    "id": 62,
+    "name": "Frederikssund",
+    "zipcode": 3600,
+    "municipality": "Frederikssund",
+    "region": "Hovedstaden",
+    "lat": 55.837500,
+    "long": 12.062500,
+    "citizens": 16268
+  },
+  {
+    "id": 63,
+    "name": "Frederiksværk",
+    "zipcode": 3300,
+    "municipality": "Halsnæs",
+    "region": "Hovedstaden",
+    "lat": 55.966667,
+    "long": 12.016667,
+    "citizens": 12549
+  },
+  {
+    "id": 64,
+    "name": "Hundested",
+    "zipcode": 3390,
+    "municipality": "Halsnæs",
+    "region": "Hovedstaden",
+    "lat": 55.963611,
+    "long": 11.852500,
+    "citizens": 8613
+  },
+  {
+    "id": 65,
+    "name": "Helsinge",
+    "zipcode": 3200,
+    "municipality": "Gribskov",
+    "region": "Hovedstaden",
+    "lat": 56.022222,
+    "long": 12.197222,
+    "citizens": 8288
+  },
+  {
+    "id": 66,
+    "name": "Helsingør",
+    "zipcode": 3000,
+    "municipality": "Helsingør",
+    "region": "Hovedstaden",
+    "lat": 56.035000,
+    "long": 12.606667,
+    "citizens": 47346
+  },
+  {
+    "id": 67,
+    "name": "Hillerød",
+    "zipcode": 3400,
+    "municipality": "Hillerød",
+    "region": "Hovedstaden",
+    "lat": 55.933333,
+    "long": 12.300000,
+    "citizens": 33079
+  },
+  {
+    "id": 68,
+    "name": "Humlebæk",
+    "zipcode": 3050,
+    "municipality": "Fredensborg",
+    "region": "Hovedstaden",
+    "lat": 55.961111,
+    "long": 12.525000,
+    "citizens": 9657
+  },
+  {
+    "id": 69,
+    "name": "Birkerød",
+    "zipcode": 3460,
+    "municipality": "Rudersdal",
+    "region": "Hovedstaden",
+    "lat": 55.840692,
+    "long": 12.423959,
+    "citizens": 20740
+  },
+  {
+    "id": 70,
+    "name": "Esbjerg",
+    "zipcode": 6700,
+    "municipality": "Esbjerg",
+    "region": "Sydjylland",
+    "lat": 55.470833,
+    "long": 8.451389,
+    "citizens": 72168
+  },
+  {
+    "id": 71,
+    "name": "Randers",
+    "zipcode": 8900,
+    "municipality": "Randers",
+    "region": "Midtjylland",
+    "lat": 56.456944,
+    "long": 10.039167,
+    "citizens": 62586
+  },
+  {
+    "id": 72,
+    "name": "Kolding",
+    "zipcode": 6000,
+    "municipality": "Kolding",
+    "region": "Syddanmark",
+    "lat": 55.490833,
+    "long": 9.472222,
+    "citizens": 60854
+  },
+  {
+    "id": 73,
+    "name": "Horsens",
+    "zipcode": 8700,
+    "municipality": "Horsens",
+    "region": "Midtjylland",
+    "lat": 55.861944,
+    "long": 9.851944,
+    "citizens": 59370
+  },
+  {
+    "id": 74,
+    "name": "Hørsholm",
+    "zipcode": 2970,
+    "municipality": "Hørsholm",
+    "region": "Hovedstaden",
+    "lat": 55.878611,
+    "long": 12.499167,
+    "citizens": 47487
+  },
+  {
+    "id": 75,
+    "name": "Silkeborg",
+    "zipcode": 8600,
+    "municipality": "Silkeborg",
+    "region": "Modtjylland",
+    "lat": 56.166667,
+    "long": 9.550000,
+    "citizens": 46179
+  },
+  {
+    "id": 76,
+    "name": "Viborg",
+    "zipcode": 0,
+    "municipality": "Viborg",
+    "region": "Midtjylland",
+    "lat": 56.450000,
+    "long": 9.400000,
+    "citizens": 40768
+  },
+  {
+    "id": 77,
+    "name": "Tåstrup",
+    "zipcode": 2630,
+    "municipality": "Tåstrup",
+    "region": "Hovedstaden",
+    "lat": 55.650000,
+    "long": 12.300000,
+    "citizens": 34248
+  },
+  {
+    "id": 78,
+    "name": "Hjørring",
+    "zipcode": 9800,
+    "municipality": "Hjørring",
+    "region": "Nordjylland",
+    "lat": 57.460000,
+    "long": 9.986667,
+    "citizens": 25815
+  },
+  {
+    "id": 79,
+    "name": "Nørresundby",
+    "zipcode": 9400,
+    "municipality": "Aalborg",
+    "region": "Nordjylland",
+    "lat": 57.058333,
+    "long": 9.922778,
+    "citizens": 23108
+  },
+  {
+    "id": 80,
+    "name": "Haderslev",
+    "zipcode": 6100,
+    "municipality": "Haderslev",
+    "region": "Sydjylland",
+    "lat": 55.250008,
+    "long": 9.488040,
+    "citizens": 22011
+  },
+  {
+    "id": 81,
+    "name": "Ølstykke-Stenløse",
+    "zipcode": 3660,
+    "municipality": "Egedal",
+    "region": "Hovedstaden",
+    "lat": 55.766667,
+    "long": 12.183333,
+    "citizens": 22030
+  },
+  {
+    "id": 82,
+    "name": "Skive",
+    "zipcode": 7800,
+    "municipality": "Skive",
+    "region": "Midtjylland",
+    "lat": 56.566667,
+    "long":  9.026944,
+    "citizens": 20599
+  },
+  {
+    "id": 83,
+    "name": "Farum",
+    "zipcode": 3520,
+    "municipality": "Furesø",
+    "region": "Hovedstaden",
+    "lat": 55.808333,
+    "long": 12.358056,
+    "citizens": 20372
+  },
+  {
+    "id": 84,
+    "name": "Smørumnedre",
+    "zipcode": 2765,
+    "municipality": "Egedal",
+    "region": "Hovedstaden",
+    "lat": 55.733333,
+    "long": 12.300000,
+    "citizens": 19925
+  },
+  {
+    "id": 85,
+    "name": "Skanderborg",
+    "zipcode": 8660,
+    "municipality": "Skanderborg",
+    "region": "Modtjylland",
+    "lat": 56.033333,
+    "long": 9.932500,
+    "citizens": 19185
+  },
+  {
+    "id": 86,
+    "name": "Lillerød",
+    "zipcode": 3450,
+    "municipality": "Allerød",
+    "region": "Hovedstaden",
+    "lat": 55.868611,
+    "long": 12.344167,
+    "citizens": 16906
+  },
+  {
+    "id": 87,
+    "name": "Aabenraa",
+    "zipcode": 6200,
+    "municipality": "Aabenraa",
+    "region": "Syddanmark",
+    "lat": 55.044444,
+    "long": 9.418056,
+    "citizens": 16352
+  },
+  {
+    "id": 88,
+    "name": "Solrød Strand",
+    "zipcode": 2680,
+    "municipality": "Solrød",
+    "region": "Hovedstaden",
+    "lat": 55.531944,
+    "long": 12.219444,
+    "citizens": 16687
+  },
+  {
+    "id": 89,
+    "name": "Grenaa",
+    "zipcode": 8500,
+    "municipality": "Norddjurs",
+    "region": "Midtjylland",
+    "lat": 56.413333,
+    "long": 10.875833,
+    "citizens": 14437
+  },
+  {
+    "id": 90,
+    "name": "Varde",
+    "zipcode": 6800,
+    "municipality": "Varde",
+    "region": "Sydjylland",
+    "lat": 55.620000,
+    "long": 8.480556,
+    "citizens": 13989
+  },
+  {
+    "id": 91,
+    "name": "Thisted",
+    "zipcode": 7700,
+    "municipality": "Thisted",
+    "region": "Nordjylland",
+    "lat": 56.955833,
+    "long":  8.692500,
+    "citizens": 13423
+  },
+  {
+    "id": 92,
+    "name": "Værløse",
+    "zipcode": 3500,
+    "municipality": "Furesø",
+    "region": "Hovedstaden",
+    "lat": 55.781944,
+    "long": 12.373056,
+    "citizens": 12977
+  },
+  {
+    "id": 93,
+    "name": "Brønderslev",
+    "zipcode": 9700,
+    "municipality": "Brønderslev",
+    "region": "Nordjylland",
+    "lat": 57.269444,
+    "long": 9.947222,
+    "citizens": 12581
+  },
+  {
+    "id": 94,
+    "name": "Odder",
+    "zipcode": 8300,
+    "municipality": "Odder",
+    "region": "Midtjylland",
+    "lat": 55.972500,
+    "long": 10.149722,
+    "citizens": 12237
+  },
+  {
+    "id": 95,
+    "name": "Dragør",
+    "zipcode": 2791,
+    "municipality": "Dragør",
+    "region": "Hovedstaden",
+    "lat": 55.592500,
+    "long": 12.672222,
+    "citizens": 12124
+  },
+  {
+    "id": 96,
+    "name": "Hobro",
+    "zipcode": 9500,
+    "municipality": "Mariagerfjord",
+    "region": "Nordjylland",
+    "lat": 56.636944,
+    "long": 9.794167,
+    "citizens": 12083
+  },
+  {
+    "id": 97,
+    "name": "Hedehusene",
+    "zipcode": 2640,
+    "municipality": "Høje-Tåstrup",
+    "region": "Hovedstaden",
+    "lat": 55.650000,
+    "long": 12.198611,
+    "citizens": 12250
+  },
+  {
+    "id": 98,
+    "name": "Haslev",
+    "zipcode": 4690,
+    "municipality": "Faxe",
+    "region": "Sjælland",
+    "lat": 55.329191,
+    "long":  11.961008,
+    "citizens": 11897
+  },
+  {
+    "id": 99,
+    "name": "Struer",
+    "zipcode": 7600,
+    "municipality": "Struer",
+    "region": "Midtjylland",
+    "lat": 56.491667,
+    "long": 8.594444,
+    "citizens": 10301
+  }
+
+
+]
+

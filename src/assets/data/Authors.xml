@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<authors>
+    <author period="ancient">
+        <name>Mike Galos</name>
+        <nationality>French</nationality>
+    </author>
+    <author period="modern">
+        <name>Eva Corets</name>
+        <nationality>British</nationality>
+    </author>
+    <author period="imperial">
+        <name>Cynthia Randall</name>
+        <nationality>Canadian</nationality>
+    </author>
+    <author period="imperial">
+        <name>Stefan Knorr</name>
+        <nationality>Canadian</nationality>
+    </author>
+    <author period="modern">
+        <name>Paula Thurman</name>
+        <nationality>British</nationality>
+    </author>
+    <author period="ancient">
+        <name>Maria Trevanian</name>
+        <nationality>Italilan</nationality>
+    </author>
+    <author period="modern">
+        <name>Colin Forbes</name>
+        <nationality>British</nationality>
+    </author>
+    <author period="modern">
+        <name>Frederick Forsyth</name>
+        <nationality>British</nationality>
+    </author>
+    <author period="imperial">
+        <name>Brian Garfield</name>
+        <nationality>Australian</nationality>
+    </author>
+    <author period="imperial">
+        <name>Jay James</name>
+        <nationality>American</nationality>
+    </author>
+    <author period="ancient">
+        <name>Evelyn Anthony</name>
+        <nationality>French</nationality>
+    </author>
+    <author period="modern">
+        <name>Gerald Green</name>
+        <nationality>Brasilian</nationality>
+    </author>
+    <author period="ancient">
+        <name>Mario Puzo</name>
+        <nationality>Italian</nationality>
+    </author>
+    <author period="imperial">
+        <name>Irwin Sharw</name>
+        <nationality>American</nationality>
+    </author>
+    <author period="ancient">
+        <name>Wilbur Smith</name>
+        <nationality>New Zealand</nationality>
+    </author>
+    <author period="modern">
+        <name>Clyde W. Burleson</name>
+        <nationality>German</nationality>
+    </author>
+    <author period="imperial">
+        <name>Alistair McLean</name>
+        <nationality>Scottich</nationality>
+    </author>
+    <author period="imperial">
+        <name>Leon Uris</name>
+        <nationality>American</nationality>
+    </author>
+    <author period="ancient">
+        <name>Jack Davis</name>
+        <nationality>Canadian</nationality>
+    </author>
+    <author period="modern">
+        <name>Ken Follet</name>
+        <nationality>Dutch</nationality>
+    </author>
+    <author period="imperial">
+        <name>James Mayo</name>
+        <nationality>German</nationality>
+    </author>
+    <author period="imperial">
+        <name>George Markstein</name>
+        <nationality>Dutch</nationality>
+    </author>
+    <author period="ancient">
+        <name>Donald Seaman</name>
+        <nationality>Britich</nationality>
+    </author>
+    <author period="ancient">
+        <name>Daniel Scott</name>
+        <nationality>Australian</nationality>
+    </author>
+    <author period="medival">
+        <name>Robert Rosenblum</name>
+        <nationality>Italian</nationality>
+    </author>
+    <author period="modern">
+        <name>Alfred Coppel</name>
+        <nationality>French</nationality>
+    </author>
+    <author period="medival">
+        <name>Robert L. Duncan</name>
+        <nationality>New Zealand</nationality>
+    </author>
+    <author period="medival">
+        <name>Jeffery Archer</name>
+        <nationality>Britich</nationality>
+    </author>
+    <author period="ancient">
+        <name>David Lippincot</name>
+        <nationality>Scottich</nationality>
+    </author>
+    <author period="imperial">
+        <name>Len Deighton</name>
+        <nationality>Canadian</nationality>
+    </author>
+    <author period="medival">
+        <name>Francis Clifford</name>
+        <nationality>Brasilian</nationality>
+    </author>
+    <author period="modern">
+        <name>Leslie Thomas</name>
+        <nationality>Spanish</nationality>
+    </author>
+    <author period="modern">
+        <name>Jack Higgins</name>
+        <nationality>Spanish</nationality>
+    </author>
+    <author period="medival">
+        <name>Ross MacDonnald</name>
+        <nationality>German</nationality>
+    </author>
+    <author period="medival">
+        <name>Harry Patterson</name>
+        <nationality>Italian</nationality>
+    </author>
+</authors>

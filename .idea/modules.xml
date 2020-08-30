@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ts-webpackdemo.iml" filepath="$PROJECT_DIR$/.idea/ts-webpackdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../sourcecode/javascript/webpackdemo/.idea/webpackdemo.iml" filepath="$PROJECT_DIR$/../../sourcecode/javascript/webpackdemo/.idea/webpackdemo.iml" />
     </modules>
   </component>
 </project>
