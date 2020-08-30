@@ -39,9 +39,10 @@ const webpackConfig = {
         test: /\.(png|jpg|gif|svg)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: 'url-loader',
             options: {
-              name: '[name].[ext]',
+              limit: 8192,
+              name: '[name].[hash:8].[ext]',
               outputPath: path.resolve(__dirname,'./dist/assets/images')
             }
           }
