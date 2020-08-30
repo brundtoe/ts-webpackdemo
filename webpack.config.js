@@ -11,7 +11,7 @@ const webpackConfig = {
   watchOptions: {
     ignored: /node_modules/
   },
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'eval-cheap-module-source-map',
   entry: {
     index: path.resolve(__dirname,'./src/page-index/main.ts'),
   },
@@ -33,7 +33,7 @@ const webpackConfig = {
       },
       {
         test: [/\.css$|.scss$/],
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
       {
         test: /\.(png|jpg|gif|svg)$/,

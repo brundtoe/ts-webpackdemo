@@ -1,7 +1,9 @@
 import docElement from '../modules/renderElement'
 
-require('../css/main.css')
-require('./page.css')
+import 'normalize.css'
+import '../css/main.css'
+import './page.css'
+import '../css/styles.scss'
 
 document.addEventListener('DOMContentLoaded', () => {
   docElement.render('data','<strong>Hello Webpack from TypeScript</strong>')
