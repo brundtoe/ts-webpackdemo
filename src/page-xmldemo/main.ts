@@ -6,13 +6,17 @@ import './page.scss'
 const axios = require('axios')
 
 import {LitElement, html, css} from 'lit-element'
-import pattern from './moduler/pattern.js'
+import pattern from './moduler/pattern'
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOMContentLoaded', 'page-xmldemo')
 })
 
 class AuthorsXmldemo extends LitElement {
+
+  protected pattern
+  protected result
+
   static get properties(){
     return {
       pattern: {type: pattern},
@@ -40,7 +44,7 @@ class AuthorsXmldemo extends LitElement {
 
   constructor() {
     super()
-    this.pattern = new pattern('Hilite-xml.xsl','Authors.xml',null)
+    this.pattern = new pattern('Hilite-xml.xsl','Authors.xml')
     //this.result = ""
     const axiosInstance = axios.create({
       method: 'get',

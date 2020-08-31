@@ -17,7 +17,7 @@ const webpackConfig = {
     bookstore: path.resolve(__dirname,'./src/page-bookstore/main.ts' ),
     geoloc: path.resolve(__dirname,'./src/page-geoloc/main.ts' ),
     promise: path.resolve(__dirname,'./src/page-promise/main.js' ),
-    xmldemo: path.resolve(__dirname,'./src/page-xmldemo/main.js' ),
+    xmldemo: path.resolve(__dirname,'./src/page-xmldemo/main.ts' ),
     xmlhttp: path.resolve(__dirname,'./src/page-xmlhttp/main.js' ),
   },
   output: {
