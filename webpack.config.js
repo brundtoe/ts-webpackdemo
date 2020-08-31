@@ -14,7 +14,6 @@ const webpackConfig = {
   devtool: 'eval-cheap-module-source-map',
   entry: {
     index: path.resolve(__dirname, './src/page-index/index.ts'),
-    another: path.resolve(__dirname, './src/page-another/another.ts'),
     bookstore: path.resolve(__dirname,'./src/page-bookstore/main.ts' ),
     geoloc: path.resolve(__dirname,'./src/page-geoloc/main.ts' )
   },
@@ -104,7 +103,7 @@ const webpackConfig = {
   }
 }
 
-const files = ['index', 'another', 'bookstore', 'geoloc']
+const files = ['index', 'bookstore', 'geoloc']
 
 files.forEach((file) => {
   webpackConfig.plugins.push(
