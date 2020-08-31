@@ -15,7 +15,7 @@ const webpackConfig = {
   entry: {
     index: path.resolve(__dirname, './src/page-index/index.ts'),
     another: path.resolve(__dirname, './src/page-another/another.ts'),
-    bookstore: path.resolve(__dirname,'./src/page-bookstore/main.js' )
+    bookstore: path.resolve(__dirname,'./src/page-bookstore/main.ts' )
   },
   output: {
     hashDigestLength: 8,

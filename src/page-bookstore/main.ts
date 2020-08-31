@@ -8,6 +8,11 @@ import {LitElement, html, css} from 'lit-element'
 console.log(bookstore.customers)
 
 class BookstoreCustomers extends LitElement {
+
+  protected customers
+  protected selection
+  protected showTable
+
   static get properties() {
     return {
       customers: {type: Array},
