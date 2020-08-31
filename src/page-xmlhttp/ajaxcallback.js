@@ -1,6 +1,6 @@
 console.log('modulet ajaxcallback')
 document.getElementById('myButton').addEventListener('click', function (e) {
-  console.log('ajaxcallback eventlistener')
+  console.log('ajax callback eventlistener')
   e.preventDefault();
   console.log('Der er trykket på fetch Content ')
   let url = this.getAttribute('data-url');

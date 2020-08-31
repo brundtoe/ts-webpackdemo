@@ -2,7 +2,6 @@ import 'bootstrap'
 import '../scss/index.scss'
 import './page.scss'
 
-
 require('./ajaxcallback')
 require('./cdalbum')
 
