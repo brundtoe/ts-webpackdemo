@@ -15,7 +15,8 @@ const webpackConfig = {
   entry: {
     index: path.resolve(__dirname, './src/page-index/index.ts'),
     bookstore: path.resolve(__dirname,'./src/page-bookstore/main.ts' ),
-    geoloc: path.resolve(__dirname,'./src/page-geoloc/main.ts' )
+    geoloc: path.resolve(__dirname,'./src/page-geoloc/main.ts' ),
+    promise: path.resolve(__dirname,'./src/page-promise/main.js' )
   },
   output: {
     hashDigestLength: 8,
@@ -103,7 +104,7 @@ const webpackConfig = {
   }
 }
 
-const files = ['index', 'bookstore', 'geoloc']
+const files = ['index', 'bookstore', 'geoloc', 'promise']
 
 files.forEach((file) => {
   webpackConfig.plugins.push(
