@@ -19,12 +19,12 @@
     <p class="lead">
       <a id="alert" class="btn btn-primary btn-sm"  role="button">Do something</a>
     </p>
-    <p class="lead">Lorem ipsum - beskriv hvad siden udfører</p>
+    <p class="lead">Load XML og transformer med XSLT</p>
   </div>
 </section>
 <!-- her indstættes en sektion med den del der tager data -->
-<main class="rounded shadow">
-<section>
+<main class="container">
+<div class="col-sm-8">
   <authors-xmldemo>
     <ul slot="queries">
       <li>authors</li>
@@ -40,8 +40,7 @@
       <li>authors/author/name/text()</li>
     </ul>
   </authors-xmldemo>
-  <div id="result"></div>
-</section>
+</div>
 </main>
 </body>
 </html>

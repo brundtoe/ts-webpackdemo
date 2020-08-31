@@ -25,7 +25,6 @@ class AuthorsXmldemo extends LitElement {
     :host {
       display: block;
       margin: auto;
-      width: 600px;
       background-color: #d4d4d4;
       border: 1px solid #d5d5d5;
       align-items: center;
@@ -60,7 +59,6 @@ class AuthorsXmldemo extends LitElement {
   }
   render() {
     return html`
-    <h2>Load XML og transformer med XSLT</h2>
     <p>Queries foretages med XPATH</p>
     <slot name="queries" @click="${this.performQuery}"></slot>
     <div>${this.result}</div>
