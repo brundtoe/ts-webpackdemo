@@ -29,7 +29,7 @@
 </section>
 <div id="content" class="container">
   <div class="col-sm8">
-    <section id="ajaxSection" class="show">
+    <section id="ajaxSection" class="hide">
       <%= require('html-loader!./ajaxcallback.html') %>
     </section>
     <section id="cdSection" class="hide">
@@ -37,9 +37,6 @@
     </section>
     <section id="resSection">
       <div id="error"></div>
-
-      <div class="rounded">
-        <p>&nbsp;</p>
         <table id="resultTable"></table>
       </div>
     </section>

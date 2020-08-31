@@ -20,8 +20,10 @@ components.forEach(component => {
     components.forEach(section => {
       if (section !== component) {
         document.getElementById(`${section}Section`).style.display = 'none'
+        document.getElementById(`${section}Section`).setAttribute('class','hide')
       } else {
         document.getElementById(`${component}Section`).style.display = 'block'
+        document.getElementById(`${component}Section`).setAttribute('class','show')
       }
     })
   })
