@@ -16,7 +16,7 @@ const webpackConfig = {
     index: path.resolve(__dirname, './src/page-index/index.ts'),
     another: path.resolve(__dirname, './src/page-another/another.ts'),
     bookstore: path.resolve(__dirname,'./src/page-bookstore/main.ts' ),
-    geoloc: path.resolve(__dirname,'./src/page-geoloc/main.js' )
+    geoloc: path.resolve(__dirname,'./src/page-geoloc/main.ts' )
   },
   output: {
     hashDigestLength: 8,

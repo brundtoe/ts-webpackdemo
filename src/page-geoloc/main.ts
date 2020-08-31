@@ -11,6 +11,11 @@ const usng = require('usng.js')
 const converter = new usng.Converter()
 
 class GeolocCities extends LitElement {
+
+  protected cities
+  protected selection
+  protected showTable
+
   static get properties() {
     return {
       cities: {type: Array},
@@ -71,7 +76,7 @@ class GeolocCities extends LitElement {
 
   render() {
     return html`
-  <h2>Danske byer</h2>
+  <h2>Danske Regioner</h2>
   <slot name="regions" @click="${this.selectRegion}"></slot>
   <input type="button" id="readCities" @click="${this.resetCities}" value="Show all cities">
   <p>&nbsp;</p>
