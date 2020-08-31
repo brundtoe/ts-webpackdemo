@@ -29,7 +29,6 @@ class GeolocCities extends LitElement {
     :host {
       display: block;
       margin: auto;
-      width: 800px;
       border: 1px solid #d5d5d5;
       align-items: center;
       box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
