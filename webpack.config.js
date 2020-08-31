@@ -4,7 +4,6 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const glob = require('glob')
 
 const webpackConfig = {
   mode: 'production',
@@ -15,7 +14,8 @@ const webpackConfig = {
   devtool: 'eval-cheap-module-source-map',
   entry: {
     index: path.resolve(__dirname, './src/page-index/index.ts'),
-    another: path.resolve(__dirname, './src/page-another/another.ts')
+    another: path.resolve(__dirname, './src/page-another/another.ts'),
+    bookstore: path.resolve(__dirname,'./src/page-bookstore/main.js' )
   },
   output: {
     hashDigestLength: 8,
@@ -103,7 +103,7 @@ const webpackConfig = {
   }
 }
 
-const files = ['index', 'another']
+const files = ['index', 'another', 'bookstore']
 
 files.forEach((file) => {
   webpackConfig.plugins.push(
