@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 const webpackConfig = {
-  mode: 'production',
+  mode: 'development',
   watch: true,
   watchOptions: {
     ignored: /node_modules/
