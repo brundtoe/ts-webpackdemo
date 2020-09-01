@@ -1,20 +1,22 @@
 {
   "compilerOptions": {
     "outDir": "./dist/",
-    "lib": ["dom","es2020"],
+    "lib": ["dom","es2020","dom.iterable"],
     "sourceMap": true,
     "strict": true,
     "noImplicitReturns": true,
-    "noImplicitAny": true,
     "noImplicitThis": true,
-    "strictBindCallApply": true,
-   "strictNullChecks": true,
-    "strictPropertyInitialization": true,
     "module": "es6",
     "moduleResolution": "node",
     "target": "es2020",
     "allowJs": true,
-    "jsx": "react"
+    "jsx": "react",
+    "plugins": [
+      {
+        "name": "ts-lit-plugin",
+        "strict": true
+      }
+    ]
   },
   "include": [
     "./src/**/*"
