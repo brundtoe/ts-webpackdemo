@@ -5,7 +5,7 @@
     "sourceMap": true,
     "strict": true,
     "noImplicitReturns": true,
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "noImplicitThis": true,
     "strictBindCallApply": true,
     "strictNullChecks": true,

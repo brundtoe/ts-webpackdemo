@@ -5,13 +5,19 @@ import './page.scss'
 import {bookstore} from './bookstore'
 import {LitElement, html, css} from 'lit-element'
 
-console.log(bookstore.customers)
+interface Customer {
+  name: string,
+  city: string,
+  state: string,
+  mail: string
+}
+
 
 class BookstoreCustomers extends LitElement {
 
-  protected customers
-  protected selection
-  protected showTable
+  protected customers: Array<Customer>
+  protected selection: Array<Customer>
+  protected showTable: boolean
 
   static get properties() {
     return {
@@ -92,13 +98,15 @@ class BookstoreCustomers extends LitElement {
     `
   }
 
+  //@ts-ignore
   resetCustomers(event) {
     this.selection = this.customers
     this.showTable = true
   }
 
-  selectState(event) {
+  selectState(event: Event) {
     console.log(event.target)
+    // @ts-ignore
     this.selection = this.customers.filter(customer => customer.state === event.target.textContent)
     this.showTable = true
   }
