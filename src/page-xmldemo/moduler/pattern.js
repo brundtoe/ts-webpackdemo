@@ -6,24 +6,12 @@ export default function (xslFile, xmlFile = null) {
   this.xmlDom = null
   this.xslStyle = null
 
-  /*
-  this.options = (path) => {
-    const paths = this.pattern.querySelectorAll(path)
-    let optionValues = ''
-    for (let path of paths) {
-      optionValues += `<option>${path.textContent}</option>`
-    }
-    return optionValues
-  }
-*/
   this.fetchFiles = async function () {
     try {
       const xmlRes = await window.fetch(this.xmlFile)
       const xslRes = await window.fetch(this.xslFile)
       const xmlText = await(xmlRes).text()
       const xslText = await (xslRes).text()
-      console.log(xmlText)
-      console.log(xslText)
       return { xmlText, xslText }
     } catch (error) {
       console.log(error)
