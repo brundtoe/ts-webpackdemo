@@ -16,10 +16,14 @@ export default function (xslFile, xmlFile = null) {
     return optionValues
   }
 */
-  this.fetchFiles = async function (axiosInstance) {
+  this.fetchFiles = async function () {
     try {
-      const xmlText = await axiosInstance(this.xmlFile)
-      const xslText = await axiosInstance(this.xslFile)
+      const xmlRes = await window.fetch(this.xmlFile)
+      const xslRes = await window.fetch(this.xslFile)
+      const xmlText = await(xmlRes).text()
+      const xslText = await (xslRes).text()
+      console.log(xmlText)
+      console.log(xslText)
       return { xmlText, xslText }
     } catch (error) {
       console.log(error)

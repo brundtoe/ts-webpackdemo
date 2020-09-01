@@ -2,9 +2,6 @@ import 'bootstrap'
 import '../scss/index.scss'
 import './page.scss'
 
-
-const axios = require('axios')
-
 import {LitElement, html, css} from 'lit-element'
 import pattern from './moduler/pattern'
 
@@ -45,20 +42,14 @@ class AuthorsXmldemo extends LitElement {
 
   constructor() {
     super()
-    this.pattern = new pattern('Hilite-xml.xsl','Authors.xml')
-    //this.result = ""
-    const axiosInstance = axios.create({
-      method: 'get',
-      baseURL: '/assets/data',
-      responseType: 'text'
-    })
+    const baseUrl = '/assets/data'
+    this.pattern = new pattern(`${baseUrl}/Hilite-xml.xsl`, `${baseUrl}/Authors.xml`)
 
-    const result = this.pattern.fetchFiles(axiosInstance)
+    const result = this.pattern.fetchFiles()
 
     result.then(res => {
-      // console.log(res)
       //@ts-ignore
-      this.pattern.convertXml(res.xmlText.data, res.xslText.data)
+      this.pattern.convertXml(res.xmlText, res.xslText)
       this.result = html`<h3>Filerne er indlæst</h3>`
     })
 
