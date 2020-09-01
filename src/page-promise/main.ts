@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 const swapiButton: HTMLElement | null = document.getElementById('swapiButton')
-
-swapiButton?.addEventListener('click', function (e) {
+//@ts-ignore
+swapiButton.addEventListener('click', function (e: MouseEvent) {
   console.log('swapiButton eventlistener')
 
   e.preventDefault()
-  //@ts-ignore
-  const url = e?.target?.dataset?.url
 
+  //@ts-ignore
+  const url: string = e.target.dataset.url
   swapi(url, 'resultTable', handleResponse, handleError)
 })

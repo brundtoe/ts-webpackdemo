@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 class AuthorsXmldemo extends LitElement {
 
   protected pattern
+  //@ts-ignore
   protected result
 
   static get properties(){
@@ -56,6 +57,7 @@ class AuthorsXmldemo extends LitElement {
 
     result.then(res => {
       // console.log(res)
+      //@ts-ignore
       this.pattern.convertXml(res.xmlText.data, res.xslText.data)
       this.result = html`<h3>Filerne er indlæst</h3>`
     })
@@ -69,8 +71,9 @@ class AuthorsXmldemo extends LitElement {
     `
   }
 
-  performQuery(event) {
+  performQuery(event: Event) {
     try {
+      //@ts-ignore
       let theQuery = event.target.textContent
       this.result = this.pattern.execQuery(theQuery)
     } catch (error) {
