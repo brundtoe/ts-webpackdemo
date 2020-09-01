@@ -2,28 +2,29 @@ import 'bootstrap'
 import '../scss/index.scss'
 import './page.scss'
 
-import {LitElement, html, css} from 'lit-element'
-import pattern from './moduler/pattern'
+import {LitElement, html, css, TemplateResult} from 'lit-element'
+import Pattern from './moduler/pattern'
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('DOMContentLoaded', 'page-xmldemo')
+    console.log('DOMContentLoaded', 'page-xmldemo')
 })
 
 class AuthorsXmldemo extends LitElement {
 
-  protected pattern
-  //@ts-ignore
-  protected result
+    protected pattern: Pattern
+    //@ts-ignore
+    protected result: DocumentFragment | TemplateResult
 
-  static get properties(){
-    return {
-      pattern: {type: pattern},
-      result:{type: Node}
+    static get properties() {
+        return {
+            pattern: {type: Pattern},
+            result: {type: Node}
 
+        }
     }
-  }
-  static get styles() {
-    return css`
+
+    static get styles() {
+        return css`
     :host {
       display: block;
       margin: auto;
@@ -38,40 +39,42 @@ class AuthorsXmldemo extends LitElement {
       font-family: sans-serif;
     }
    `
-  }
+    }
 
-  constructor() {
-    super()
-    const baseUrl = '/assets/data'
-    this.pattern = new pattern(`${baseUrl}/Hilite-xml.xsl`, `${baseUrl}/Authors.xml`)
+    constructor() {
+        super()
+        const baseUrl = '/assets/data'
+        this.pattern = new Pattern(`${baseUrl}/Hilite-xml.xsl`, `${baseUrl}/Authors.xml`)
 
-    const result = this.pattern.fetchFiles()
+        const result = this.pattern.fetchFiles()
 
-    result.then(res => {
-      //@ts-ignore
-      this.pattern.convertXml(res.xmlText, res.xslText)
-      this.result = html`<h3>Filerne er indlæst</h3>`
-    })
+        result.then(res => {
+            //@ts-ignore
+            const {xmlText, xslText} = res
+            this.pattern.convertXml(xmlText, xslText)
+            this.result = html`<h3>Filerne er indlæst</h3>`
+        })
 
-  }
-  render() {
-    return html`
+    }
+
+    render() {
+        return html`
     <p>Queries foretages med XPATH</p>
     <slot name="queries" @click="${this.performQuery}"></slot>
     <div>${this.result}</div>
     `
-  }
-
-  performQuery(event: Event) {
-    try {
-      //@ts-ignore
-      let theQuery = event.target.textContent
-      this.result = this.pattern.execQuery(theQuery)
-    } catch (error) {
-      this.result = `<strong>${error.message}</strong>`
     }
-  }
+
+    performQuery(event: Event) {
+        try {
+            //@ts-ignore
+            let theQuery = event.target.textContent
+            this.result = this.pattern.execQuery(theQuery)
+        } catch (error) {
+            this.result = html `<strong>${error.message}</strong>`
+        }
+    }
 
 }
 
-window.customElements.define('authors-xmldemo',AuthorsXmldemo);
+window.customElements.define('authors-xmldemo', AuthorsXmldemo);
