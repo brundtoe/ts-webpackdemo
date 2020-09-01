@@ -65,10 +65,9 @@ class AuthorsXmldemo extends LitElement {
     `
     }
 
-    performQuery(event: Event) {
+    performQuery(event: { target: HTMLElement }) {
         try {
-            //@ts-ignore
-            let theQuery = event.target.textContent
+            let theQuery: string | null = event.target.textContent
             this.result = this.pattern.execQuery(theQuery)
         } catch (error) {
             this.result = html `<strong>${error.message}</strong>`

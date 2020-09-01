@@ -41,7 +41,7 @@ export default class Pattern {
         return processor.transformToFragment(xmldom, window.document)
     }
 
-    execQuery(this: Pattern, query: string) {
+    execQuery(this: Pattern, query: string | null) {
         try {
             const queryResult = performQuery(query, this.xmlDom)
             console.log('fortsætter med transformering')
