@@ -2,13 +2,16 @@ import 'bootstrap'
 import '../scss/index.scss'
 import './page.scss'
 
-require('./ajaxcallback')
+import {addAjaxCallback } from './ajaxcallback'
 require('./cdalbum')
+
+addAjaxCallback()
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOMContentLoaded', 'page-xmlhttp')
 
 })
+
 const components = ['ajax', 'cd']
 
 components.forEach(component => {
