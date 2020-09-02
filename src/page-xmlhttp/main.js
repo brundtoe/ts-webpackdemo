@@ -3,9 +3,10 @@ import '../scss/index.scss'
 import './page.scss'
 
 import {addAjaxCallback } from './ajaxcallback'
-require('./cdalbum')
+import {addCdAlbums} from './cdalbum'
 
 addAjaxCallback()
+addCdAlbums()
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOMContentLoaded', 'page-xmlhttp')
