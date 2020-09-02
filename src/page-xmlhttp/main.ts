@@ -21,7 +21,6 @@ components.forEach(component => {
   widget.addEventListener('click', e => {
     e.preventDefault()
     docElement.renderHtml('resultTable','')
-    docElement.renderHtml('showCd','')
     docElement.renderHtml('error','')
     components.forEach(section => {
       if (section !== component) {
