@@ -18,7 +18,7 @@ const webpackConfig = {
     geoloc: path.resolve(__dirname,'./src/page-geoloc/main.ts' ),
     promise: path.resolve(__dirname,'./src/page-promise/main.ts' ),
     xmldemo: path.resolve(__dirname,'./src/page-xmldemo/main.ts' ),
-    xmlhttp: path.resolve(__dirname,'./src/page-xmlhttp/main.js' ),
+    xmlhttp: path.resolve(__dirname,'./src/page-xmlhttp/main.ts' ),
   },
   output: {
     hashDigestLength: 8,
