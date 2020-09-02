@@ -17,10 +17,10 @@ export default class Pattern {
 
     async fetchFiles(this: Pattern) {
         try {
-            const xmlRes = await window.fetch(this.xmlFile)
-            const xslRes = await window.fetch(this.xslFile)
-            const xmlText = await (xmlRes).text()
-            const xslText = await (xslRes).text()
+            const xmlText = await window.fetch(this.xmlFile).then((data: Response) => {return data.text()})
+            const xslText = await window.fetch(this.xslFile).then((data) => {
+                return data.text()
+            })
             return {xmlText, xslText}
         } catch (error) {
             console.log(error)

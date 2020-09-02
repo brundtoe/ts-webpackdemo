@@ -17,9 +17,8 @@ class AuthorsXmldemo extends LitElement {
 
     static get properties() {
         return {
-            pattern: {type: Pattern},
-            result: {type: Node}
-
+            pattern: {attribute: false },
+            result: {attribute: false}
         }
     }
 
