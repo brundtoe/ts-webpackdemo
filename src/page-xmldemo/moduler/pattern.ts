@@ -1,4 +1,4 @@
-import performQuery from './performQuery.js'
+import {performQuery} from './performQuery'
 
 export default class Pattern {
 
@@ -41,12 +41,14 @@ export default class Pattern {
         return processor.transformToFragment(xmldom, window.document)
     }
 
-    execQuery(this: Pattern, query: string | null) {
+    execQuery(this: Pattern, query: string ) {
         try {
-            const queryResult = performQuery(query, this.xmlDom)
+            const queryResult: Document | DocumentFragment = performQuery(query, this.xmlDom)
+            if(!queryResult) {
+                return
+            }
             console.log('fortsætter med transformering')
-            const transformResult = this.transformXml(this.xslStyle, queryResult)
-            return transformResult
+            return this.transformXml(this.xslStyle, queryResult)
         } catch (error) {
             console.log('rethrown error', error)
             console.log('denne fejl er fra performQuery')

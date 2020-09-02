@@ -1,25 +1,28 @@
 /**
- * Perform XPath query and return xmldocument
+ * Perform XPath query and return xmlDocumentFragment
  * @param path
  * @param doc
  * @return xmldom
  */
-export default function (path, doc) {
+export function performQuery(path: string, doc: Document): Document | DocumentFragment {
   // skal være et snapshot, idet en iterator medfører fejl når der
   // efterfølgende  manipuleres med resultatet på attribute og text nodes
 
   try {
-    let nodesSnapshot = doc.evaluate(path, doc, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null)
+    let nodesSnapshot: XPathResult = doc.evaluate(path, doc, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null)
     if (nodesSnapshot.snapshotLength === 0) {
       throw new Error('Dette er ikke en gyldig XPATH expression')
     }
 
     let xmldom = document.implementation.createDocument('', 'root', null)
-    let newnode = null
-    let newText = null
+    let newnode: Node | null
+    let newText: Text
 
     for (let i = 0; i < nodesSnapshot.snapshotLength; i++) {
-      let node = nodesSnapshot.snapshotItem(i)
+      let node: Node | null = nodesSnapshot.snapshotItem(i)
+      if (!node) {
+        return new DocumentFragment()
+      }
       // behandlingen afhænger af nodeType
       switch (node.nodeType) {
         case 1: // Element node
@@ -28,7 +31,7 @@ export default function (path, doc) {
           break
         case 2: // attrib node
           newnode = document.createElement('attribute')
-          newText = document.createTextNode(node.nodeName + '=' + node.value)
+          newText = document.createTextNode(node.nodeName + '=' + node.nodeValue)
           newnode.appendChild(newText)
           xmldom.documentElement.appendChild(newnode)
           break
@@ -44,6 +47,6 @@ export default function (path, doc) {
     return xmldom
   } catch (error) {
     console.log(error)
-    throw error
+    return new DocumentFragment()
   }
 }

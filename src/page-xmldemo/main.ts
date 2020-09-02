@@ -13,7 +13,7 @@ class AuthorsXmldemo extends LitElement {
 
     protected pattern: Pattern
     //@ts-ignore
-    protected result: DocumentFragment | TemplateResult
+    protected result: DocumentFragment | TemplateResult | undefined
 
     static get properties() {
         return {
@@ -67,6 +67,9 @@ class AuthorsXmldemo extends LitElement {
     performQuery(event: { target: HTMLElement }) {
         try {
             let theQuery: string | null = event.target.textContent
+            if (!theQuery) {
+                return
+            }
             this.result = this.pattern.execQuery(theQuery)
         } catch (error) {
             this.result = html `<strong>${error.message}</strong>`
