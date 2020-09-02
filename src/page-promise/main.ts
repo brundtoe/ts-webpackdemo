@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('DOMContentLoaded', 'page-promise')
 })
 
-const swapiButton: HTMLElement | null = document.getElementById('swapiButton')
-//@ts-ignore
+const swapiButton = <HTMLElement>document.getElementById('swapiButton')
+
 swapiButton.addEventListener('click', function (e: MouseEvent) {
   console.log('swapiButton eventlistener')
 

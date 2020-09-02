@@ -11,7 +11,6 @@ export function addAjaxCallback() {
     console.log('ajax callback eventlistener')
     e.preventDefault();
     console.log('Der er trykket på fetch Content ')
-    //@ts-ignore
     let url: string | null = this.getAttribute('data-url');
     if (!url) {
       docElement.renderHtml('result', 'atributten data-url mangler på myButton')
