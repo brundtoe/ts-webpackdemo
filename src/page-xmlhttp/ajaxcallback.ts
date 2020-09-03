@@ -13,7 +13,7 @@ export function addAjaxCallback() {
     console.log('Der er trykket på fetch Content ')
     let url: string | null = this.getAttribute('data-url');
     if (!url) {
-      docElement.renderHtml('result', 'atributten data-url mangler på myButton')
+      docElement.renderHtml('error', 'atributten data-url mangler på myButton')
       return
     }
     let xhr: XMLHttpRequest;
@@ -31,12 +31,9 @@ export function addAjaxCallback() {
 
   function callback(xhr: XMLHttpRequest) {
     docElement.renderHtml('resultTable', xhr.responseText)
-    //document.getElementById("resultTable").innerHTML = xhr.responseText;
-
   }
 
   function myError(xhr: XMLHttpRequest) {
-    docElement.renderHtml('result', xhr.statusText)
-    //document.getElementById("result").innerHTML = 'Content: ' + xhr.statusText;
+    docElement.renderHtml('error', xhr.statusText)
   }
 }

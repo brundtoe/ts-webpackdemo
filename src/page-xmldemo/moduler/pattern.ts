@@ -1,4 +1,5 @@
 import {performQuery} from './performQuery'
+import docElement from "../../modules/renderElement";
 
 export default class Pattern {
 
@@ -23,8 +24,8 @@ export default class Pattern {
             })
             return {xmlText, xslText}
         } catch (error) {
-            console.log(error)
-            return false
+            docElement.renderHtml('error', error.message)
+            throw new Error(error.message)
         }
     }
 
@@ -45,13 +46,14 @@ export default class Pattern {
         try {
             const queryResult: Document | DocumentFragment = performQuery(query, this.xmlDom)
             if(!queryResult) {
-                return
+                throw new Error('ingen resultat fra din query')
             }
             console.log('fortsætter med transformering')
             return this.transformXml(this.xslStyle, queryResult)
         } catch (error) {
             console.log('rethrown error', error)
             console.log('denne fejl er fra performQuery')
+            docElement.renderHtml('error', error.message)
             throw error
         }
     }
