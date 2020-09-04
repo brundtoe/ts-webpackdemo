@@ -1,0 +1,20 @@
+version: '3.6'
+
+services:
+
+  frontend:
+    image: nginx:bbr
+    container_name: frontend
+    environment:
+      DOCKER: 'true'
+    volumes:
+      - ./dist:/usr/share/nginx/html
+    ports:
+      - 80:80
+    networks:
+      - default
+
+networks:
+  default:
+    external:
+      name: humle_net
