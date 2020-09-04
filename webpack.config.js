@@ -9,7 +9,7 @@ const webpackConfig = {
   mode: 'development',
   watch: true,
   watchOptions: {
-    ignored: /node_modules/
+    ignored: ['node_modules/**']
   },
   devtool: 'eval-cheap-module-source-map',
   entry: {
