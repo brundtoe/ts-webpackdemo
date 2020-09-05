@@ -9,7 +9,7 @@
 </head>
 <body>
 <section id="topnav">
-  <%= require('html-loader!../partials/topnav.html') %>
+  <%= require('html-loader!../partials/topnav.ejs') %>
 </section>
 <section class="container">
   <div class="col-sm-8">
@@ -24,16 +24,16 @@
 <!-- her indstættes en sektion med den del der tager data -->
 <section id="includedWidget" class="container">
   <div class="col-sm-8">
-    <%= require('html-loader!./widget.html') %>
+    <%= require('html-loader!./widget.ejs') %>
   </div>
 </section>
 <div id="content" class="container">
   <div class="col-sm8">
     <section id="ajaxSection" class="hide">
-      <%= require('html-loader!./ajaxcallback.html') %>
+      <%= require('html-loader!./ajaxcallback.ejs') %>
     </section>
     <section id="cdSection" class="hide">
-      <%= require('html-loader!./cdalbum.html') %>
+      <%= require('html-loader!./cdalbum.ejs') %>
     </section>
     <section id="resSection">
       <div id="error"></div>

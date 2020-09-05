@@ -11,19 +11,27 @@
 </head>
 <body>
 <section id="topnav">
-  <%= require('html-loader!../partials/topnav.html') %>
+  <%= require('html-loader!../partials/topnav.ejs') %>
 </section>
 <section class="container">
   <div class="col-sm-8">
-    <h1 class="display-5">Her anføres en overskrift</h1>
+    <h1 class="display-5">Bookstore</h1>
     <p class="lead">
-      <a id="alert" class="btn btn-primary btn-sm"  role="button">jQuery Alert</a>
+      <a id="alert" class="btn btn-primary btn-sm" role="button">Do something</a>
     </p>
     <p class="lead">Lorem ipsum - beskriv hvad siden udfører</p>
   </div>
 </section>
-<section class="container">
-  <div id="data" class="col-sm-8">
+<section id="bookstoreSection" class="container">
+  <div class="col-sm-8">
+    <bookstore-customers>
+      <ul slot="states">
+        <li>California</li>
+        <li>Washington</li>
+        <li>Indiana</li>
+        <li>Illinois</li>
+      </ul>
+    </bookstore-customers>
   </div>
 </section>
 </body>

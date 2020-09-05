@@ -112,7 +112,7 @@ files.forEach((file) => {
   webpackConfig.plugins.push(
     new HtmlWebPackPlugin({
       filename: `${file}.html`,
-      template: path.resolve(__dirname, `./src/page-${file}/tmpl.html`),
+      template: path.resolve(__dirname, `./src/page-${file}/tmpl.ejs`),
       chunks: [file.replace(/-(\w)/g, (match, c) => c.toLowerCase())]
     })
   )
