@@ -3,10 +3,10 @@ import '../scss/index.scss'
 import './page.scss'
 
 import docElement from "../modules/renderElement";
-import {addAjaxCallback } from './ajaxcallback'
+import './ajaxcallback'
 import {addCdAlbums} from './cdalbum'
 import './ajax-component'
-addAjaxCallback()
+
 addCdAlbums()
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
-const components = ['ajax', 'cd']
+const components = ['cd']
 
 components.forEach(component => {
   const widget = (document.getElementById(`${component}Widget`)) as HTMLElement
