@@ -98,8 +98,8 @@ class BookstoreCustomers extends LitElement {
     `
   }
 
-  //@ts-ignore
-  resetCustomers(event) {
+
+  resetCustomers(event: Event) {
     this.selection = this.customers
     this.showTable = true
   }
@@ -113,4 +113,6 @@ class BookstoreCustomers extends LitElement {
 }
 
 //registrer elementet
-window.customElements.define('bookstore-customers', BookstoreCustomers)
+if (!window.customElements.get('bookstore-customers')) {
+  window.customElements.define('bookstore-customers', BookstoreCustomers)
+}
