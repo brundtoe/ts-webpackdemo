@@ -4,17 +4,20 @@ class AjaxComponent extends LitElement {
 
     protected url: string
     protected result: Array<string>
+    protected showTable: boolean
 
     constructor() {
         super();
         this.url = "assets/data/ajax_info.json"
         this.result = []
+        this.showTable = false
     }
 
     static get properties() {
         return {
             url: {type: String},
-            result: {type: Array}
+            result: {type: Array},
+            show: {type: Boolean}
         }
     }
 
@@ -25,7 +28,8 @@ class AjaxComponent extends LitElement {
            id="myButton" @click="${this.fetchHtml}" data-url=${this.url}>
            Fetch HTML fragment</button>
           <p>&nbsp;</p>
-          <table>
+          <table class="${this.showTable?'show':'hide'}">
+          <tr class="row"><th>Ajax Statements</th></tr>
             ${this.result.map(res  => html`<tr class="row">
                 <td>${res}</td></tr>`)}
           </table>
@@ -36,6 +40,7 @@ class AjaxComponent extends LitElement {
 
         event.preventDefault()
         this.result = await window.fetch(this.url).then(res => res.json())
+        this.showTable = true
 
     }
 
