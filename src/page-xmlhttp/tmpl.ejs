@@ -11,6 +11,7 @@
 <section id="topnav">
     <%= require('html-loader!../partials/topnav.ejs') %>
 </section>
+
 <section class="container">
     <div class="col-sm-8">
         <h1 class="display-5">XMLHttpRequest</h1>
@@ -21,21 +22,27 @@
         <p>Ref. <a href="https://www.w3schools.com/xml/ajax_examples.asp">Ajax Example with call back function</a></p>
     </div>
 </section>
+
 <section id="ajaxComponent" class="container">
     <div class="col-sm-8">
         <ajax-component></ajax-component>
     </div>
+    <p>&nbsp;</p>
 </section>
-<!-- her indstættes en sektion med den del der tager data -->
+
 <section id="ajaxSection" class="container">
     <div class="col-sm-8">
         <ajax-callback></ajax-callback>
     </div>
+    <p>&nbsp;</p>
 </section>
+
 <section id="cdSection" class="container">
     <div class="col-sm8">
-            <cd-album></cd-album>
+        <cd-album></cd-album>
     </div>
+    <p>&nbsp;</p>
 </section>
+<p>&nbsp;</p>
 </body>
 </html>

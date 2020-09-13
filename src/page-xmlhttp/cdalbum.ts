@@ -1,16 +1,13 @@
-import docElement from '../modules/renderElement'
-
+import style from './componentStyle'
 console.log('modulet cdalbum')
 
 const template: HTMLTemplateElement = document.createElement('template')
 
-template.innerHTML = `
-  <div id="content" class="container">
-    <div class="col-sm8">
-      <button type="button" class="btn btn-primary btn-sm" id="cdButton" 
+template.innerHTML = `${style}
+  <div>
+    <button type="button" class="btn btn-primary btn-sm" id="cdButton" 
           data-url="assets/data/cd_catalog.xml">Read CD catalog</button>
-      <p>&nbsp;</p>
-    </div>
+    <p>&nbsp;</p>
     <table id="showCd"></table>
     <div id="error"></div>
   </div>`
@@ -33,7 +30,7 @@ class CdAlbum extends HTMLElement {
             console.log('cdButton eventlistener')
 
             e.preventDefault();
-            let url: string = <string>this.dataset.url;
+            let url = <string>this.dataset.url;
 
             let xmlhttp: XMLHttpRequest = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
