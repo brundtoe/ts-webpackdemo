@@ -4,17 +4,15 @@ import './page.scss'
 
 import docElement from "../modules/renderElement";
 import './ajaxcallback'
-import {addCdAlbums} from './cdalbum'
+import  './cdalbum'
 import './ajax-component'
-
-addCdAlbums()
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOMContentLoaded', 'page-xmlhttp')
 
 })
 
-const components = ['cd']
+const components: Array<string> = []
 
 components.forEach(component => {
   const widget = (document.getElementById(`${component}Widget`)) as HTMLElement

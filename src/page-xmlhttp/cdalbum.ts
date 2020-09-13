@@ -2,56 +2,77 @@ import docElement from '../modules/renderElement'
 
 console.log('modulet cdalbum')
 
-export function addCdAlbums() {
+const template: HTMLTemplateElement = document.createElement('template')
 
-    const cdButton = document.getElementById('cdButton')
-    if (!cdButton) {
-        docElement.renderHtml('error', 'cdButton mangler på siden')
-        return
-    }
-    cdButton.addEventListener('click', function (e) {
-        console.log('cdButton eventlistener')
+template.innerHTML = `
+  <div id="content" class="container">
+    <div class="col-sm8">
+      <button type="button" class="btn btn-primary btn-sm" id="cdButton" 
+          data-url="assets/data/cd_catalog.xml">Read CD catalog</button>
+      <p>&nbsp;</p>
+    </div>
+    <table id="showCd"></table>
+    <div id="error"></div>
+  </div>`
 
-        e.preventDefault();
-        let url: string | undefined = this.dataset.url;
-        if (!url) {
-            docElement.renderHtml('error', 'Der mangler en url i requesten')
-            return
-        }
+class CdAlbum extends HTMLElement {
 
-        let xmlhttp: XMLHttpRequest = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function () {
-            if (this.readyState === 4 && this.status === 200) {
-                buildTable(this);
-            } else if (this.readyState === 4 && this.status !== 200) {
-                docElement.renderHtml('error',xmlhttp.statusText)
+    constructor() {
+        super()
+        this.attachShadow({mode: 'open'})
+        //@ts-ignore
+        this.shadowRoot.appendChild(template.content.cloneNode(true))
+        //@ts-ignore
+        const cdButton = <HTMLButtonElement>this.shadowRoot.querySelector('#cdButton')
+        //@ts-ignore
+        const showCd = <HTMLElement>this.shadowRoot.querySelector('#showCd')
+        //@ts-ignore
+        const errorElement = <HTMLElement>this.shadowRoot.querySelector('#error')
+
+        cdButton.addEventListener('click', function (e) {
+            console.log('cdButton eventlistener')
+
+            e.preventDefault();
+            let url: string = <string>this.dataset.url;
+
+            let xmlhttp: XMLHttpRequest = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState === 4 && this.status === 200) {
+                    buildTable(xmlhttp, showCd, errorElement);
+                } else if (this.readyState === 4 && this.status !== 200) {
+                    errorElement.innerHTML = xmlhttp.statusText
+                }
+            };
+            xmlhttp.open("GET", url, true);
+            xmlhttp.send();
+        })
+
+        function buildTable(xmlhttp: XMLHttpRequest, showCd: HTMLElement, errorElement: HTMLElement) {
+            let xmlDoc = xmlhttp.responseXML;
+            if (!xmlDoc) {
+                errorElement.innerHTML= 'xml filen er ikke indlæst'
+                return
             }
-        };
-        xmlhttp.open("GET", url, true);
-        xmlhttp.send();
-    })
-
-    function buildTable(xmlhttp: XMLHttpRequest) {
-        let xmlDoc = xmlhttp.responseXML;
-        if (!xmlDoc) {
-            docElement.renderHtml('error','xml filen er ikke indlæst')
+            let nodes: HTMLCollection = xmlDoc.getElementsByTagName("CD");
+            if (!nodes) {
+                errorElement.innerHTML = 'elementet CD er ikkee fundet i cd album'
+                return
+            }
+            let numNodes: number = nodes.length
+            let table = "<tr><th>Artist</th><th>Title</th></tr>";
+            for (let i = 0; i < numNodes; i++) {
+                table += `<tr id="cd-${i}" ><td >`
+                table += nodes[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue;
+                table += "</td><td>";
+                table += nodes[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue;
+                table += "</td></tr>";
+            }
+            showCd.innerHTML = table
             return
         }
-        let nodes: HTMLCollection = xmlDoc.getElementsByTagName("CD");
-        if (!nodes) {
-            docElement.renderHtml('error','elementet CD er ikkee fundet i cd album')
-            return
-        }
-        let numNodes: number = nodes.length
-        let table = "<tr><th>Artist</th><th>Title</th></tr>";
-        for (let i = 0; i < numNodes; i++) {
-            table += `<tr id="cd-${i}" ><td >`
-            table += nodes[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue;
-            table += "</td><td>";
-            table += nodes[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue;
-            table += "</td></tr>";
-        }
-        docElement.renderHtml('resultTable',table)
-        return
     }
+}
+
+if (!window.customElements.get('cd-album')) {
+    window.customElements.define('cd-album', CdAlbum)
 }

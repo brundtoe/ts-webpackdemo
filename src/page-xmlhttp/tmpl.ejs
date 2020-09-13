@@ -21,30 +21,21 @@
         <p>Ref. <a href="https://www.w3schools.com/xml/ajax_examples.asp">Ajax Example with call back function</a></p>
     </div>
 </section>
-<section class="container">
+<section id="ajaxComponent" class="container">
     <div class="col-sm-8">
         <ajax-component></ajax-component>
     </div>
 </section>
 <!-- her indstættes en sektion med den del der tager data -->
-<section id="includedWidget" class="container">
+<section id="ajaxSection" class="container">
     <div class="col-sm-8">
         <ajax-callback></ajax-callback>
     </div>
 </section>
-<div id="content" class="container">
+<section id="cdSection" class="container">
     <div class="col-sm8">
-        <section id="ajaxSection" class="hide">
-            <%= require('html-loader!./ajaxcallback.ejs') %>
-        </section>
-        <section id="cdSection" class="hide">
-            <%= require('html-loader!./cdalbum.ejs') %>
-        </section>
-        <section id="resSection">
-            <div id="error"></div>
-            <table id="resultTable"></table>
-        </section>
+            <cd-album></cd-album>
     </div>
-</div>
+</section>
 </body>
 </html>
