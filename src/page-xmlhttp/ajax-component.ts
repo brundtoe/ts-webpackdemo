@@ -3,40 +3,40 @@ import {LitElement, html, css} from 'lit-element'
 class AjaxComponent extends LitElement {
 
     protected url: string
-    protected result: string
+    protected result: Array<string>
 
     constructor() {
         super();
-        this.url = "assets/data/ajax_info.html"
-        this.result = ""
+        this.url = "assets/data/ajax_info.json"
+        this.result = []
     }
 
-    static get properties () {
+    static get properties() {
         return {
             url: {type: String},
-            result: {type: String}
+            result: {type: Array}
         }
     }
 
     render() {
-
         return html`
         <div >
           <button type="button" class="btn btn-primary btn-sm"
            id="myButton" @click="${this.fetchHtml}" data-url=${this.url}>
            Fetch HTML fragment</button>
           <p>&nbsp;</p>
-          <table>${this.result}</table>
-        </div>
-        `
+          <table>
+            ${this.result.map(res  => html`<tr class="row">
+                <td>${res}</td></tr>`)}
+          </table>
+        </div>`
     }
 
     async fetchHtml(event: Event) {
 
         event.preventDefault()
-        //@ts-ignore
-        this.result = await window.fetch(this.url).then(res => res.text())
-        console.log('resultat',this.result)
+        this.result = await window.fetch(this.url).then(res => res.json())
+
     }
 
     static get styles() {

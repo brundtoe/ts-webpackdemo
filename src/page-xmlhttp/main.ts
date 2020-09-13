@@ -5,7 +5,7 @@ import './page.scss'
 import docElement from "../modules/renderElement";
 import {addAjaxCallback } from './ajaxcallback'
 import {addCdAlbums} from './cdalbum'
-
+import './ajax-component'
 addAjaxCallback()
 addCdAlbums()
 
