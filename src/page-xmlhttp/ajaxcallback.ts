@@ -7,7 +7,7 @@ const template: HTMLTemplateElement = document.createElement('template')
 template.innerHTML = `<div >
     <div id="content" class="container">
       <div class="col-sm8">
-        <button type="button" class="btn btn-primary btn-sm" id="myButton" data-url="assets/data/ajax_info.html">Fetch HTML fragment</button>
+        <button type="button" class="btn btn-primary btn-sm" id="myButton" data-url="assets/data/ajax_info.html">XMLHttpRequest</button>
         <div id="error"></div>
         <table id="resultTable"></table>
       </div>
@@ -41,7 +41,7 @@ class AjaxCallback extends HTMLElement {
             xhr = new XMLHttpRequest();
             xhr.onload = function () {
                 if (this.status >= 200 && this.status < 300) {
-                    callback(this);
+                    callback(xhr);
                 } else {
                     myError(xhr);
                 }

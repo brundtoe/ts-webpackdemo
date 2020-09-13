@@ -26,7 +26,7 @@ class AjaxComponent extends LitElement {
         <div >
           <button type="button" class="btn btn-primary btn-sm"
            id="myButton" @click="${this.fetchHtml}" data-url=${this.url}>
-           Fetch HTML fragment</button>
+           Fetch JSON</button>
           <p>&nbsp;</p>
           <table class="${this.showTable?'show':'hide'}">
           <tr class="row"><th>Ajax Statements</th></tr>
