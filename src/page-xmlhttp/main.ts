@@ -39,38 +39,25 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 let fetchQuery = () => {
-    const container = <HTMLElement>document.querySelector('#fetchSection')
+    const container = <HTMLElement>document.querySelector('#container')
     const component = document.createElement('fetch-component')
     container.appendChild(component)
 }
 
 let callbackQuery = () => {
-    const container = <HTMLElement>document.querySelector('#ajaxSection')
+    const container = <HTMLElement>document.querySelector('#container')
     const component = document.createElement('ajax-callback')
     container.appendChild(component)
 }
 
 let cdalbumQuery = () => {
-    const container = <HTMLElement>document.querySelector('#cdSection')
+    const container = <HTMLElement>document.querySelector('#container')
     const component = document.createElement('cd-album')
     container.appendChild(component)
 }
 
 let hideAll = () => {
     docElement.renderHtml('error','')
-    const fetchContainer = <HTMLElement>document.querySelector('#fetchSection')
-    const fetchComponent = document.querySelector('fetch-component')
-    if (fetchComponent) {
-        fetchContainer.removeChild(fetchComponent)
-    }
-    const ajaxContainer = <HTMLElement>document.querySelector('#ajaxSection')
-    const ajaxComponent = document.querySelector('ajax-callback')
-    if ( ajaxComponent) {
-        ajaxContainer.removeChild(ajaxComponent)
-    }
-    const cdContainer = <HTMLElement>document.querySelector('#cdSection')
-    const cdComponent = document.querySelector('cd-album')
-    if ( cdComponent) {
-        cdContainer.removeChild(cdComponent)
-    }
+    const container = <HTMLElement>document.querySelector('#container')
+    container.innerHTML = ''
 }
