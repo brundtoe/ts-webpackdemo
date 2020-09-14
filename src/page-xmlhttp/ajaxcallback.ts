@@ -1,4 +1,4 @@
-import style from './componentStyle'
+import style from '../scss/componentStyle'
 
 console.log('modulet ajaxcallback')
 
