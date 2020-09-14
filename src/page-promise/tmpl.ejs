@@ -13,20 +13,10 @@
 <section id="topnav">
   <%= require('html-loader!../partials/topnav.ejs') %>
 </section>
-<section class="container">
-  <div class="col-sm-8">
-    <h1 class="display-5">Promise swapi</h1>
-    <p class="lead">
-      <a id="alert" class="btn btn-primary btn-sm" role="button">Do something</a>
-    </p>
-    <p class="lead">Hent og vis Star wars figur Biggs Darklighter</p>
-  </div>
-</section>
-<!-- her indstættes en sektion med den del der tager data -->
 <div class="container">
   <div class="col-sm-8">
     <section id="swapiSection">
-      <%= require('html-loader!./swapi.ejs') %>
+      <swapi-component></swapi-component>
     </section>
   </div>
 </div>
