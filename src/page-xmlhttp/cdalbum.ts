@@ -1,53 +1,51 @@
 import style from './componentStyle'
+
 console.log('modulet cdalbum')
 
 const template: HTMLTemplateElement = document.createElement('template')
 
 template.innerHTML = `${style}
   <div>
-    <button type="button" class="btn btn-primary btn-sm" id="cdButton" 
-          data-url="assets/data/cd_catalog.xml">Read CD catalog</button>
-    <p>&nbsp;</p>
+  <h2>XMLHttpRequest af CD album en xml fil</h2>
     <table id="showCd"></table>
     <div id="error"></div>
   </div>`
 
 class CdAlbum extends HTMLElement {
 
+    protected url: string = 'assets/data/cd_catalog.xml'
+
     constructor() {
         super()
         this.attachShadow({mode: 'open'})
         //@ts-ignore
         this.shadowRoot.appendChild(template.content.cloneNode(true))
-        //@ts-ignore
-        const cdButton = <HTMLButtonElement>this.shadowRoot.querySelector('#cdButton')
+
+    }
+
+    connectedCallback() {
         //@ts-ignore
         const showCd = <HTMLElement>this.shadowRoot.querySelector('#showCd')
         //@ts-ignore
         const errorElement = <HTMLElement>this.shadowRoot.querySelector('#error')
+        console.log('cdButton eventlistener')
+        let url = <string>this.url;
 
-        cdButton.addEventListener('click', function (e) {
-            console.log('cdButton eventlistener')
-
-            e.preventDefault();
-            let url = <string>this.dataset.url;
-
-            let xmlhttp: XMLHttpRequest = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function () {
-                if (this.readyState === 4 && this.status === 200) {
-                    buildTable(xmlhttp, showCd, errorElement);
-                } else if (this.readyState === 4 && this.status !== 200) {
-                    errorElement.innerHTML = xmlhttp.statusText
-                }
-            };
-            xmlhttp.open("GET", url, true);
-            xmlhttp.send();
-        })
+        let xmlhttp: XMLHttpRequest = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                buildTable(xmlhttp, showCd, errorElement);
+            } else if (this.readyState === 4 && this.status !== 200) {
+                errorElement.innerHTML = xmlhttp.statusText
+            }
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
 
         function buildTable(xmlhttp: XMLHttpRequest, showCd: HTMLElement, errorElement: HTMLElement) {
             let xmlDoc = xmlhttp.responseXML;
             if (!xmlDoc) {
-                errorElement.innerHTML= 'xml filen er ikke indlæst'
+                errorElement.innerHTML = 'xml filen er ikke indlæst'
                 return
             }
             let nodes: HTMLCollection = xmlDoc.getElementsByTagName("CD");
