@@ -5,10 +5,12 @@ class FetchComponent extends LitElement {
     protected url: string
     protected result: Array<string>
     protected showTable: boolean
+    protected error: string
 
     constructor() {
         super();
         this.url = "assets/data/ajax_info.json"
+        this.error = ''
         this.result = []
         this.showTable = false
     }
@@ -24,23 +26,28 @@ class FetchComponent extends LitElement {
     render() {
         return html`
         <div >
-          <button type="button" class="btn btn-primary btn-sm"
-           id="myButton" @click="${this.fetchHtml}" data-url=${this.url}>
-           Fetch JSON</button>
-          <p>&nbsp;</p>
-          <table class="${this.showTable?'show':'hide'}">
+        <h2>Window.fetch JSON file</h2>
+          <table class="${this.showTable ? 'show' : 'hide'}">
           <tr class="row"><th>Ajax Statements</th></tr>
-            ${this.result.map(res  => html`<tr class="row">
+            ${this.result.map(res => html`<tr class="row">
                 <td>${res}</td></tr>`)}
           </table>
+          <div id="error"></div>
         </div>`
+    }
+
+    connectedCallback() {
+        super.connectedCallback();
+        window.fetch(this.url).then(res => res.json()).then(data => {
+            this.result = data
+            this.showTable = true
+        }).catch( err => this.error = err.message)
     }
 
     async fetchHtml(event: Event) {
 
         event.preventDefault()
-        this.result = await window.fetch(this.url).then(res => res.json())
-        this.showTable = true
+
 
     }
 
