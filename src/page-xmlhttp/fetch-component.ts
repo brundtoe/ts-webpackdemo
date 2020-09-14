@@ -1,6 +1,6 @@
 import {LitElement, html, css} from 'lit-element'
 
-class AjaxComponent extends LitElement {
+class FetchComponent extends LitElement {
 
     protected url: string
     protected result: Array<string>
@@ -88,6 +88,6 @@ class AjaxComponent extends LitElement {
 
 }
 
-if (!customElements.get('ajax-compoent')) {
-    customElements.define('ajax-component', AjaxComponent)
+if (!customElements.get('fetch-component')) {
+    customElements.define('fetch-component', FetchComponent)
 }
