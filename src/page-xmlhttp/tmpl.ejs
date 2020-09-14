@@ -14,14 +14,27 @@
 
 <section class="container">
     <div class="col-sm-8">
-        <h1 class="display-5">XMLHttpRequest</h1>
-        <p class="lead">
-            <a id="alert" class="btn btn-primary btn-sm" role="button">Do something</a>
-        </p>
-        <p class="lead">XMLHttprequest med callback</p>
-        <p>Ref. <a href="https://www.w3schools.com/xml/ajax_examples.asp">Ajax Example with call back function</a></p>
+        <h1>Vælg en forespørgsel</h1>
+        <form id="queries" class="form-horizontal">
+            <div class="form-group">
+                <input type="radio" id="callback" value="callback" checked name="action">
+                <label for="callback">ajax Callback</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="cdalbum" value="cdalbum" name="action">
+                <label for="callback">CD Album</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="fetchJson" value="fetch" name="action">
+                <label for="callback">Fetch JSON</label>
+            </div>
+            <div class="form-group">
+                <input type="submit" id="cmdButton" class="btn btn-primary btn-sm" value="Udfør forespørgsel">
+            </div>
+        </form>
     </div>
 </section>
+
 <!--
 <section class="container">
     <div  id="ajaxComponent" class="col-sm-8">
