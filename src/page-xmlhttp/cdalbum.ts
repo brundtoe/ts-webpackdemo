@@ -53,7 +53,7 @@ class CdAlbum extends HTMLElement {
                 errorElement.innerHTML = 'elementet CD er ikkee fundet i cd album'
                 return
             }
-            let numNodes: number = nodes.length
+            let numNodes: number = (nodes.length > 10) ? 10 : nodes.length
             let table = "<tr><th>Artist</th><th>Title</th></tr>";
             for (let i = 0; i < numNodes; i++) {
                 table += `<tr id="cd-${i}" ><td >`
