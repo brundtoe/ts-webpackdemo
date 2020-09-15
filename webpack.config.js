@@ -19,6 +19,7 @@ const webpackConfig = {
     promise: path.resolve(__dirname,'./src/page-promise/main.ts' ),
     xmldemo: path.resolve(__dirname,'./src/page-xmldemo/main.ts' ),
     xmlhttp: path.resolve(__dirname,'./src/page-xmlhttp/main.ts' ),
+    authors: path.resolve(__dirname,'./src/page-authors/main.ts')
   },
   output: {
     hashDigestLength: 8,
@@ -106,7 +107,7 @@ const webpackConfig = {
   }
 }
 
-const files = ['index', 'bookstore', 'geoloc', 'promise', 'xmldemo', 'xmlhttp']
+const files = ['index', 'bookstore', 'geoloc', 'promise', 'xmldemo', 'xmlhttp', 'authors']
 
 files.forEach((file) => {
   webpackConfig.plugins.push(

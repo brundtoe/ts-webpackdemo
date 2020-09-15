@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>authors</title>
+    <style>
+        li {
+            cursor: pointer;
+        }
+
+        .container {
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+<jbr-element-menu></jbr-element-menu>
+<section class="container">
+    <div class="col-sm-8>">
+        <h1>Authors from Bookstore</h1>
+        <p><a href="../index.html">Retur til startsiden</a></p>
+        <bookstore-authors>
+
+        </bookstore-authors>
+    </div>
+</section>
+<template id="layout">
+    <style>
+
+        table {
+            margin: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+/* .row er defineret i bootstrap derfor jbr-row */
+        .jbr-row:first-child {
+            background: #FF0
+        }
+
+        .jbr-row:nth-child(2n) {
+            background-color: #FFF;
+        }
+
+        .jbr-row:nth-child(2n+3) {
+            background: #d5d5d5
+        }
+    </style>
+    <h2>Bookstore Authors</h2>
+    <ul id="firstnames">
+        <li>Alex</li>
+        <li>Brian</li>
+        <li>Chris</li>
+        <li>David</li>
+    </ul>
+    <input type="button" id="readAuthors" value="Show all authors">
+    <p>&nbsp;</p>
+    <table id="res">
+    </table>
+</template>
+</body>
+</html>
