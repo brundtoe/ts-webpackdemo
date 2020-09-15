@@ -2,7 +2,7 @@ import 'bootstrap'
 import '../scss/index.scss'
 import './page.scss'
 
-import {bookstore} from './bookstore'
+import {bookstore} from '../assets/data/bookstore'
 import {LitElement, html, css} from 'lit-element'
 
 interface Customer {
