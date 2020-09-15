@@ -3,12 +3,17 @@ export default {
     {
       id:'Brand',
       link: '/',
-      text: 'jbr-element-menu'
+      text: 'jbr element menu'
     },
     {
       id: 'home',
       link: '/',
       text: 'Home'
+    },
+    {
+      id: 'Authors',
+      link: '/authors.html',
+      text: 'Authors'
     },
     {
       id: 'Customers',
@@ -21,14 +26,9 @@ export default {
       text: 'Geoloc'
     },
     {
-      id: 'jbr-menu',
-      link: '/menuer/jbr-menu.html',
-      text: 'lit html'
+      id: 'xmlhttp',
+      link: '/xmlhttp.html',
+      text: 'xmlhttp'
     },
-    {
-      id:'jackie',
-      link: '/menuer/jackie-menu.html',
-      text: 'Jackie'
-    }
   ]
 }
