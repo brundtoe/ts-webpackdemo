@@ -1,3 +1,4 @@
+
 const style = `.flex-container {
           display: flex;
           flex-direction: row;
@@ -18,12 +19,22 @@ const style = `.flex-container {
           color: #282828;
       }`
 
-class JackieMenu extends HTMLElement{
+const template: HTMLTemplateElement = document.createElement('template')
+
+template.innerHTML = `
+  <nav  class="flex-container">
+    <a href="#"><strong>Jackie Menu</strong></a>
+    <a href="/index.html">Home</a>
+    <a href="/authors.html">Authors</a>
+    <a href="/bookstore.html">Customers</a>
+    <a href="/geoloc.html">Geoloc</a>
+  </nav>`
+
+class JbrMenu extends HTMLElement{
 
   constructor() {
     super()
-    const template = document.getElementById('menu-items')
-    //@ts-ignore
+
     const templateContent = template.content
 
     const stylesheet = document.createElement('style')
@@ -36,6 +47,6 @@ class JackieMenu extends HTMLElement{
     this.shadowRoot.appendChild(templateContent.cloneNode(true))
   }
 }
-if (!customElements.get('jackie-menu')) {
-  customElements.define('jackie-menu', JackieMenu)
+if (!customElements.get('jbr-menu')) {
+  customElements.define('jbr-menu', JbrMenu)
 }

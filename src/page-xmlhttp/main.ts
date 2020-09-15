@@ -3,6 +3,8 @@ import '../scss/index.scss'
 import './page.scss'
 
 import docElement from "../modules/renderElement";
+
+import '../modules/jbr-menu'
 import './ajaxcallback'
 import './cdalbum'
 import './fetch-component'
