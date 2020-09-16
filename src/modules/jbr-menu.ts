@@ -19,7 +19,7 @@ const style = `.flex-container {
           color: #282828;
       }`
 
-const template: HTMLTemplateElement = document.createElement('template')
+const template: HTMLElement = document.createElement('section')
 
 template.innerHTML = `
   <nav  class="flex-container">
@@ -34,17 +34,14 @@ class JbrMenu extends HTMLElement{
 
   constructor() {
     super()
-
-    const templateContent = template.content
+    this.attachShadow({mode:'open'})
 
     const stylesheet = document.createElement('style')
     stylesheet.append(style)
-
-    this.attachShadow({mode:'open'})
     //@ts-ignore
     this.shadowRoot.appendChild(stylesheet.cloneNode(true))
     //@ts-ignore
-    this.shadowRoot.appendChild(templateContent.cloneNode(true))
+    this.shadowRoot.appendChild(template.cloneNode(true))
   }
 }
 if (!customElements.get('jbr-menu')) {

@@ -4,9 +4,9 @@ import {SwapiTypes, FetchError} from "./swapiTypes";
 import handleResponse from "./handleResponsedata"
 import handleError from "./handleResponseError"
 
-const template: HTMLTemplateElement = document.createElement('template')
+const template: HTMLElement = document.createElement('section')
 
-template.innerHTML = `${style}
+template.innerHTML = `
 <div>
   <h2>Promise henter Start Wars People</h2>
   <div id="error"></div>
@@ -22,8 +22,10 @@ class SwapiComponent extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({mode: 'open'})
+        const stylesheet = document.createElement('style')
+        stylesheet.append(style)
         //@ts-ignore
-        this.shadowRoot.appendChild(template.content.cloneNode(true))
+        this.shadowRoot.appendChild(template.cloneNode(true))
         this.url = "https://swapi.dev/api/people/9"
         //@ts-ignore
         this.domElement = this.shadowRoot.getElementById('resultTable')

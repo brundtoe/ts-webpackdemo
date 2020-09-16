@@ -2,9 +2,9 @@ import style from '../scss/componentStyle'
 
 console.log('modulet cdalbum')
 
-const template: HTMLTemplateElement = document.createElement('template')
+const template: HTMLElement = document.createElement('section')
 
-template.innerHTML = `${style}
+template.innerHTML = `
   <div>
   <h2>XMLHttpRequest af CD album en xml fil</h2>
     <table id="showCd"></table>
@@ -18,8 +18,11 @@ class CdAlbum extends HTMLElement {
     constructor() {
         super()
         this.attachShadow({mode: 'open'})
+
+        const stylesheet = document.createElement('style')
+        stylesheet.append(style)
         //@ts-ignore
-        this.shadowRoot.appendChild(template.content.cloneNode(true))
+        this.shadowRoot.appendChild(template.cloneNode(true))
 
     }
 

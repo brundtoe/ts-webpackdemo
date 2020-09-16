@@ -2,9 +2,9 @@ import style from '../scss/componentStyle'
 
 console.log('modulet ajaxcallback')
 
-const template: HTMLTemplateElement = document.createElement('template')
+const template: HTMLElement = document.createElement('section')
 
-template.innerHTML = `${style}
+template.innerHTML = `
   <div>
     <h2>XMLHttp request med callback</h2>
     <table id="resultTable"></table>
@@ -18,8 +18,10 @@ class AjaxCallback extends HTMLElement {
     constructor() {
         super()
         this.attachShadow({mode: 'open'})
+        const stylesheet = document.createElement('style')
+        stylesheet.append(style)
         //@ts-ignore
-        this.shadowRoot.appendChild(template.content.cloneNode(true))
+        this.shadowRoot.appendChild(template.cloneNode(true))
         //@ts-ignore
 
     }
