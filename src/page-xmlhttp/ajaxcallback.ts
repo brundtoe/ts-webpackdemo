@@ -21,6 +21,9 @@ class AjaxCallback extends HTMLElement {
         const stylesheet = document.createElement('style')
         stylesheet.append(style)
         //@ts-ignore
+        this.shadowRoot.appendChild(stylesheet.cloneNode(true))
+
+        //@ts-ignore
         this.shadowRoot.appendChild(template.cloneNode(true))
         //@ts-ignore
 
