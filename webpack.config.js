@@ -23,7 +23,7 @@ const webpackConfig = {
   output: {
     hashDigestLength: 8,
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name][hash].js'
+    filename: '[name][contenthash].js'
   },
   devServer: {
     contentBase: path.resolve(__dirname, './dist'),
@@ -58,11 +58,12 @@ const webpackConfig = {
             loader: 'url-loader',
             options: {
               limit: 8192,
-              name: '[name].[hash:8].[ext]',
+              name: '[name].[contenthash:8].[ext]',
               outputPath: path.resolve(__dirname, './dist/assets/images')
             }
           }
-        ]
+        ],
+        type: 'javascript/auto'
       }
     ]
   },
