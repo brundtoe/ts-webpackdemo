@@ -7,7 +7,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 const webpackConfig = {
   mode: 'development',
-  watch: true,
   watchOptions: {
     ignored: ['node_modules/**']
   },
