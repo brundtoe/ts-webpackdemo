@@ -1,3 +1,5 @@
 node_modules
 dist
 workspace.xml
+cypress/screenshots
+cypress/videos
