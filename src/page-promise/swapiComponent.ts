@@ -8,7 +8,7 @@ const template: HTMLElement = document.createElement('section')
 
 template.innerHTML = `
 <div>
-  <h2>Promise henter Start Wars People</h2>
+  <h2>Promise henter Star Wars People</h2>
   <div id="error"></div>
   <div class="rounded">
       <table id="resultTable" class="table table-sm table-striped"></table>
