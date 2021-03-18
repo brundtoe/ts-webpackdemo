@@ -47,12 +47,14 @@ class BookstoreAuthors extends HTMLElement {
 
   handleResponse = (data: Array<Author>) => {
     let res = `
-      <tr class="jbr-row">
-      <th>Id</th>
-      <th>Firstname</th>
-      <th>Lastname</th>
-      <th>Email</th>
-      </tr>`
+      <thead >
+        <tr class="thead-row">
+          <th>Id</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>`
     data.forEach(author => {
       res += `<tr class="jbr-row">
                   <td>${author.id}</td>

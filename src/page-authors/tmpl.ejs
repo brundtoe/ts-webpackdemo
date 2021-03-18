@@ -18,6 +18,9 @@
 <section class="container">
     <div class="col-sm-8>">
         <h1>Authors from Bookstore</h1>
+        <div>
+            <p class="lead">Webcomponent Template inserted in page</p>
+        </div>
         <p><a href="../index.html">Retur til startsiden</a></p>
         <bookstore-authors>
 
@@ -39,17 +42,20 @@
         th, td {
             padding: 5px;
         }
+        .thead-row {
+            background: #FF0
+        }
 /* .row er defineret i bootstrap derfor jbr-row */
         .jbr-row:first-child {
-            background: #FF0
+            background: #FFF
         }
 
         .jbr-row:nth-child(2n) {
-            background-color: #FFF;
+            background-color: #d5d5d5;
         }
 
         .jbr-row:nth-child(2n+3) {
-            background: #d5d5d5
+            background: #FFF
         }
     </style>
     <h2>Bookstore Authors</h2>
