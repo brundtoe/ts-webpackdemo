@@ -41,44 +41,56 @@ class GeolocCities extends LitElement {
 
     static get styles() {
         return css`
-    :host {
-      display: block;
-      margin: auto;
-      border: 1px solid #d5d5d5;
-      align-items: center;
-      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-      border-radius: 3px;
-      overflow: hidden;
-      padding: 10px;
-      box-sizing: border-box;
-      font-family: sans-serif;
-    }
-    table {
-      margin: auto;
-    }
-    table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
-    th, td {
-      padding: 5px;
-    }
-    .row:first-child {
-      background: #FF0
-    }
-    .row:nth-child(2n) {
-      background-color: #FFF;
-    }
-    .row:nth-child(2n+3) {
-      background: #d5d5d5
-    }
-    .hide {
-      visibility: hidden;
-    }
-    .show {
-      visibility: visible;
-      }
-    `
+          :host {
+            display: block;
+            margin: auto;
+            border: 1px solid #d5d5d5;
+            align-items: center;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+            overflow: hidden;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+          }
+
+          table {
+            margin: auto;
+          }
+
+          table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+          }
+
+          th, td {
+            padding: 5px;
+          }
+
+          .row:first-child {
+            background: #d5d5d5
+          }
+
+          .row:nth-child(2n) {
+            background-color: #FFF;
+          }
+
+          .row:nth-child(2n+3) {
+            background: #d5d5d5
+          }
+
+          .thead-row {
+            background: #FF0;
+          }
+
+          .hide {
+            visibility: hidden;
+          }
+
+          .show {
+            visibility: visible;
+          }
+        `
     }
 
     constructor() {
@@ -90,33 +102,38 @@ class GeolocCities extends LitElement {
 
     render() {
         return html`
-  <h2>Danske Regioner</h2>
-  <slot name="regions" @click="${this.selectRegion}"></slot>
-  <input type="button" id="readCities" @click="${this.resetCities}" value="Show all cities">
-  <p>&nbsp;</p>
-  <table class="${this.showTable ? 'show' : 'hide'}">
-    <tr class="row">
-      <th>id</th>
-      <th>name</th>
-      <th>zip</th>
-      <th>latitude</th>
-      <th>longitude</th>
-      <th>Zone</th>
-      <th>Easting</th>
-      <th>Northing</th>
-      </tr>
-      ${this.selection.map(city => html`<tr class="row">
-        <td>${city.id}</td>
-        <td>${city.name}</td>
-        <td>${city.zipcode}</td>
-        <td>${city.lat}</td>
-        <td>${city.long}</td>
-        <td>${city.zone}</td>
-        <td>${city.easting}</td>
-        <td>${city.northing}</td>
-        </tr>`)}  
-  </table>
-    `
+          <h2>Danske Regioner</h2>
+          <slot name="regions" @click="${this.selectRegion}"></slot>
+          <input type="button" id="readCities" @click="${this.resetCities}" value="Show all cities">
+          <p>&nbsp;</p>
+          <table class="${this.showTable ? 'show' : 'hide'}">
+            <thead>
+            <tr class="thead-row">
+              <th>id</th>
+              <th>name</th>
+              <th>zip</th>
+              <th>latitude</th>
+              <th>longitude</th>
+              <th>Zone</th>
+              <th>Easting</th>
+              <th>Northing</th>
+            </tr>
+            </thead>
+            <tbody>
+            ${this.selection.map(city => html`
+              <tr class="row">
+                <td>${city.id}</td>
+                <td>${city.name}</td>
+                <td>${city.zipcode}</td>
+                <td>${city.lat}</td>
+                <td>${city.long}</td>
+                <td>${city.zone}</td>
+                <td>${city.easting}</td>
+                <td>${city.northing}</td>
+              </tr>`)}
+            </tbody>
+          </table>
+        `
     }
 
     resetCities(event: Event) {
