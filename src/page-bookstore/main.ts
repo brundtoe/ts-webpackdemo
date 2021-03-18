@@ -51,8 +51,11 @@ class BookstoreCustomers extends LitElement {
     th, td {
       padding: 5px;
     }
+    .thead-row {
+        background: #FF0;
+    }
     .row:first-child {
-      background: #FF0
+      background: #d5d5d5
     }
     .row:nth-child(2n) {
       background-color: #FFF;
@@ -84,7 +87,7 @@ class BookstoreCustomers extends LitElement {
   <p>&nbsp;</p>
   <table class="${this.showTable?'show':'hide'}">
     <thead>
-    <tr class="row">
+    <tr class="thead-row">
       <th>Name</th>
       <th>City</th>
       <th>State</th>
