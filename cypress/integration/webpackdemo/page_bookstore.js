@@ -1,4 +1,4 @@
-describe('Webpack page bookstore ', () => {
+describe('Webpack page bookstore with LitElement ', () => {
 
   beforeEach(() => {
     cy.visit('/bookstore.html')
@@ -6,6 +6,8 @@ describe('Webpack page bookstore ', () => {
 
   it('Successfully load page bookstore', () => {
     cy.get('.display-5').contains('Bookstore')
+    cy.get('#topnavbar > ul > li')
+      .should('have.length',8)
   })
 
   it('Bookstore Section is a container', () => {
@@ -24,7 +26,7 @@ describe('Webpack page bookstore ', () => {
       .first()
       .contains('California')
   })
-  it('Has button Show all customers', () => {
+  it('Has button Show all 29 customers', () => {
     cy.get('bookstore-customers')
       .shadow()
       .find('#readCustomers')
@@ -34,7 +36,18 @@ describe('Webpack page bookstore ', () => {
       .shadow()
       .find('table.show > tbody')
       .children('tr.row')
-      .should('have.length',30)
+      .should('have.length',29)
+  })
+  it('Indiana should have 4 customers', () => {
+    cy.get('bookstore-customers')
+      .find('#IN')
+      .click()
+
+    cy.get('bookstore-customers')
+      .shadow()
+      .find('table.show > tbody')
+      .children('tr.row')
+      .should('have.length',4)
 
   })
 

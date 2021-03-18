@@ -5,6 +5,8 @@ describe('Webpack homepage', () => {
 
   it('Homepage has menuitems', () => {
     cy.visit('/')
+    cy.get('#topnavbar > ul > li')
+      .should('have.length',8)
     cy.get('#menuHome').contains('Home')
     cy.get('#menuBookstore').contains('Bookstore')
     cy.get('#menuGeoloc').contains('Geoloc')

@@ -83,17 +83,22 @@ class BookstoreCustomers extends LitElement {
   <input type="button" id="readCustomers" @click="${this.resetCustomers}" value="Show all customers">
   <p>&nbsp;</p>
   <table class="${this.showTable?'show':'hide'}">
+    <thead>
     <tr class="row">
       <th>Name</th>
       <th>City</th>
       <th>State</th>
       <th>Email</th>
       </tr>
-      ${this.selection.map(customer => html`<tr class="row">
+    </thead>
+    <tbody>
+        ${this.selection.map(customer => html`<tr class="row">
         <td>${customer.name}</td>
         <td>${customer.city}</td>
         <td>${customer.state}</td>
-        <td>${customer.mail}</td></tr>`)}  
+        <td>${customer.mail}</td>
+        </tr>`)}
+    </tbody>
   </table>
     `
   }
