@@ -36,7 +36,7 @@ describe('Webpack page bookstore with LitElement ', () => {
     it('Has button Show all 29 customers', () => {
       cy.get('@customers')
         .shadow()
-        .find('#readCustomers')
+        .find('[data-test=readCustomers]')
         .click()
 
       cy.get('@customers')
@@ -49,7 +49,7 @@ describe('Webpack page bookstore with LitElement ', () => {
     it('There are 4 customers i Inidiana', () => {
 
       cy.get('@customers')
-        .find('#IN')
+        .find('[data-test=IN]')
         .click()
 
       cy.get('@customers')
