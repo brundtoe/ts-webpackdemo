@@ -7,7 +7,7 @@ describe('Webpack page bookstore with LitElement ', () => {
   it('Successfully load page bookstore', () => {
     cy.get('.display-5').contains('Bookstore')
     cy.get('#topnavbar > ul > li')
-      .should('have.length',8)
+      .should('have.length', 8)
   })
 
   it('Bookstore Section is a container', () => {
@@ -15,40 +15,49 @@ describe('Webpack page bookstore with LitElement ', () => {
   })
 
   it('Bookstore contains 4 selections', () => {
-    cy.get('bookstore-customers > ul')
-      .children('li')
+    cy.get('bookstore-customers')
+      .as('slots')
+      .find('ul > li')
       .should('have.length', 4)
-  })
 
-  it('Contains element California', () => {
-    cy.get('bookstore-customers > ul')
-      .children('li')
+    cy.get('@slots')
+      .find('ul > li')
       .first()
       .contains('California')
   })
-  it('Has button Show all 29 customers', () => {
-    cy.get('bookstore-customers')
-      .shadow()
-      .find('#readCustomers')
-      .click()
 
-    cy.get('bookstore-customers')
-      .shadow()
-      .find('table.show > tbody')
-      .children('tr.row')
-      .should('have.length',29)
+  describe('Checking web component bookstore-customersd', () => {
+
+    beforeEach(() => {
+      cy.get('bookstore-customers')
+        .as('customers')
+    })
+
+    it('Has button Show all 29 customers', () => {
+      cy.get('@customers')
+        .shadow()
+        .find('#readCustomers')
+        .click()
+
+      cy.get('@customers')
+        .shadow()
+        .find('table.show > tbody')
+        .children('tr.row')
+        .should('have.length', 29)
+    })
+
+    it('There are 4 customers i Inidiana', () => {
+
+      cy.get('@customers')
+        .find('#IN')
+        .click()
+
+      cy.get('@customers')
+        .shadow()
+        .find('table.show > tbody')
+        .children('tr.row')
+        .should('have.length', 4)
+
+    })
   })
-  it('Indiana should have 4 customers', () => {
-    cy.get('bookstore-customers')
-      .find('#IN')
-      .click()
-
-    cy.get('bookstore-customers')
-      .shadow()
-      .find('table.show > tbody')
-      .children('tr.row')
-      .should('have.length',4)
-
-  })
-
 })
