@@ -16,17 +16,18 @@ describe('Webpack page xmlhttp', () => {
   it('Select AJAX callback',() => {
 
     cy.get('#callback').focus()
-      .click()
+      .check()
 
     cy.get('#cmdButton')
       .click()
 
     cy.get('ajax-callback')
+      .as('cb')
       .shadow()
       .find('h2')
       .contains('XMLHttp request med callback')
 
-    cy.get('ajax-callback')
+    cy.get('@cb')
       .shadow()
       .find('tbody > tr')
       .should('have.length',3)
@@ -36,17 +37,18 @@ describe('Webpack page xmlhttp', () => {
   it('select CD album', () => {
 
     cy.get('#cdalbum').focus()
-      .click()
+      .check()
 
     cy.get('#cmdButton')
       .click()
 
     cy.get('cd-album')
+      .as('album')
       .shadow()
       .find('h2')
       .contains('XMLHttpRequest af CD album en xml fil')
 
-    cy.get('cd-album')
+    cy.get('@album')
       .shadow()
       .find('tbody > tr')
       .should(($tr) => {
@@ -62,17 +64,18 @@ describe('Webpack page xmlhttp', () => {
 
   it('Fetch JSON', () => {
     cy.get('#fetchJson').focus()
-      .click()
+      .check()
 
     cy.get('#cmdButton')
       .click()
 
     cy.get('fetch-component')
+      .as('component')
       .shadow()
       .find('h2')
       .contains('Window.fetch JSON file')
 
-    cy.get('fetch-component')
+    cy.get('@component')
       .shadow()
       .find('tbody > tr')
       .should(($tr) => {
