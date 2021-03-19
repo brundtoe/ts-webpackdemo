@@ -60,7 +60,7 @@ class CdAlbum extends HTMLElement {
                 return
             }
             let numNodes: number = (nodes.length > 10) ? 10 : nodes.length
-            let table = "<tr><th>Artist</th><th>Title</th></tr>";
+            let table = "<thead><tr><th>Artist</th><th>Title</th></tr></thead>";
             for (let i = 0; i < numNodes; i++) {
                 table += `<tr id="cd-${i}" ><td >`
                 table += nodes[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue;
