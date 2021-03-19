@@ -19,12 +19,13 @@ describe('Webpack page Authors', () => {
 
   it('page contains five names', () => {
     cy.get('bookstore-authors')
+      .as('authors')
       .find('#firstnames')
       .children('li')
       .should('have.length',4)
 
-    cy.get('bookstore-authors > ul' )
-      .children('li')
+    cy.get('@authors')
+      .find('ul > li')
       .should('have.text','AlexBrianChrisDavid')
       .and('contain','Brian')
   })
