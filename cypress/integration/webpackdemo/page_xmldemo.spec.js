@@ -30,18 +30,17 @@ describe('Webpack page Authors', () => {
     cy.get('authors-xmldemo')
       .shadow()
       .find('div')
-      .should('have.length',7)
       .contains('Cynthia Randall')
   })
 
-  it.only('Show element name',() => {
+  it('Show element name',() => {
     cy.get('authors-xmldemo > ul > :nth-child(4)')
       .click()
 
     cy.get('authors-xmldemo')
       .shadow()
       .find('div')
-      .should('have.length',38)
+      .contains('Harry Patterson')
   })
 
 })
