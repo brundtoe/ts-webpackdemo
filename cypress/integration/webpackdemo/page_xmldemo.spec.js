@@ -24,23 +24,24 @@ describe('Webpack page Authors', () => {
       .should('have.length',11)
   })
   it('Show all authors',() => {
-    cy.get('authors-xmldemo > ul > :nth-child(1)')
+    cy.get('authors-xmldemo > ul > :nth-child(7)')
       .click()
 
     cy.get('authors-xmldemo')
       .shadow()
-      .find('div[style="margin-left:1em"]')
-      .should('have.length',107)
+      .find('div')
+      .should('have.length',7)
+      .contains('Cynthia Randall')
   })
 
-  it('Show element name',() => {
+  it.only('Show element name',() => {
     cy.get('authors-xmldemo > ul > :nth-child(4)')
       .click()
 
     cy.get('authors-xmldemo')
       .shadow()
-      .find('div[style="margin-left:1em"]')
-      .should('have.length',36)
+      .find('div')
+      .should('have.length',38)
   })
 
 })
