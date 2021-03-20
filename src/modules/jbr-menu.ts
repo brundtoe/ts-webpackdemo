@@ -23,11 +23,11 @@ const template: HTMLElement = document.createElement('section')
 
 template.innerHTML = `
   <nav  class="flex-container">
-    <a href="#"><strong>Jackie Menu</strong></a>
-    <a href="/index.html">Home</a>
-    <a href="/authors.html">Authors</a>
-    <a href="/bookstore.html">Customers</a>
-    <a href="/geoloc.html">Geoloc</a>
+    <a data-test="menuJackie" href="#"><strong>Jackie Menu</strong></a>
+    <a data-test="home" href="/index.html">Home</a>
+    <a data-test="authors" href="/authors.html">Authors</a>
+    <a data-test="bookstore" href="/bookstore.html">Customers</a>
+    <a data-test="geoloc" href="/geoloc.html">Geoloc</a>
   </nav>`
 
 class JbrMenu extends HTMLElement{
