@@ -29,7 +29,7 @@ describe('Webpack page Authors', () => {
 
     cy.get('authors-xmldemo')
       .shadow()
-      .find('[data-test=selection]')
+      .find('[data-test="selection"]')
       .contains('Cynthia Randall')
   })
 
@@ -39,7 +39,7 @@ describe('Webpack page Authors', () => {
 
     cy.get('authors-xmldemo')
       .shadow()
-      .find('[data-test=selection]')
+      .find('[data-test="selection"]')
       .contains('Harry Patterson')
   })
 
