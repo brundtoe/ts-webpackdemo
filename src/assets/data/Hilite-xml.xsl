@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generic stylesheet for viewing XML -->
 <xsl:stylesheet version="1.0"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <xsl:template match="/">
-        <DIV STYLE="font-family:Tahoma; font-size:0.8 em; margin-bottom:2em">
+        <DIV data-test="selection" STYLE="font-family:Tahoma; font-size:0.8 em; margin-bottom:2em">
             <xsl:apply-templates/>
         </DIV>
     </xsl:template>

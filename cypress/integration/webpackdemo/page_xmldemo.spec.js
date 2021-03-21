@@ -23,13 +23,13 @@ describe('Webpack page Authors', () => {
       .children('li')
       .should('have.length',11)
   })
-  it('Show all authors',() => {
+  it('Show Canadian authors',() => {
     cy.get('authors-xmldemo > ul > :nth-child(7)')
       .click()
 
     cy.get('authors-xmldemo')
       .shadow()
-      .find('div')
+      .find('[data-test=selection]')
       .contains('Cynthia Randall')
   })
 
@@ -39,7 +39,7 @@ describe('Webpack page Authors', () => {
 
     cy.get('authors-xmldemo')
       .shadow()
-      .find('div')
+      .find('[data-test=selection]')
       .contains('Harry Patterson')
   })
 
