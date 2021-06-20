@@ -284,7 +284,7 @@
     "name": "Rønne",
     "zipcode": 3700,
     "municipality": "Bornholm",
-    "region": "Hovdstaden",
+    "region": "Hovedstaden",
     "lat": 55.1,
     "long": 14.7,
     "citizens": 13780
@@ -324,7 +324,7 @@
     "name": "Nexø",
     "zipcode": 3730,
     "municipality": "Bornholm",
-    "region": "Hovdstaden",
+    "region": "Hovedstaden",
     "lat": 55.063611,
     "long": 15.132222,
     "citizens": 3644
@@ -694,7 +694,7 @@
     "name": "Esbjerg",
     "zipcode": 6700,
     "municipality": "Esbjerg",
-    "region": "Sydjylland",
+    "region": "Syddanmark",
     "lat": 55.470833,
     "long": 8.451389,
     "citizens": 72168
@@ -744,7 +744,7 @@
     "name": "Silkeborg",
     "zipcode": 8600,
     "municipality": "Silkeborg",
-    "region": "Modtjylland",
+    "region": "Midtjylland",
     "lat": 56.166667,
     "long": 9.550000,
     "citizens": 46179
@@ -794,7 +794,7 @@
     "name": "Haderslev",
     "zipcode": 6100,
     "municipality": "Haderslev",
-    "region": "Sydjylland",
+    "region": "Syddanmark",
     "lat": 55.250008,
     "long": 9.488040,
     "citizens": 22011
@@ -844,7 +844,7 @@
     "name": "Skanderborg",
     "zipcode": 8660,
     "municipality": "Skanderborg",
-    "region": "Modtjylland",
+    "region": "Midtjylland",
     "lat": 56.033333,
     "long": 9.932500,
     "citizens": 19185
@@ -894,7 +894,7 @@
     "name": "Varde",
     "zipcode": 6800,
     "municipality": "Varde",
-    "region": "Sydjylland",
+    "region": "Syddanmark",
     "lat": 55.620000,
     "long": 8.480556,
     "citizens": 13989

@@ -155,7 +155,8 @@ class GeolocCities extends LitElement {
             .filter(city => city.region === event.target.textContent)
             .map(city => {
                 let utmCoord = converter.LLtoUTM(city.lat, city.long, [])
-                console.log(utmCoord)
+                console.log(converter.LLtoUSNG(city.lat, city.long, 5))
+                //console.log(utmCoord)
                 city.zone = utmCoord.zoneNumber
                 city.easting = Math.round(utmCoord.easting)
                 city.northing = Math.round(utmCoord.northing)
