@@ -4,13 +4,13 @@ import './page.scss'
 
 interface City {
     id: number,
-    name: string,
+    city: string,
     municipality: string,
     region: string,
     zipcode: number,
     lat: number,
     long: number,
-    citizens: number,
+    population: number,
     zone: number | null,
     easting: number | null,
     northing: number | null
@@ -110,7 +110,7 @@ class GeolocCities extends LitElement {
             <thead>
             <tr class="thead-row">
               <th>id</th>
-              <th>name</th>
+              <th>city</th>
               <th>zip</th>
               <th>latitude</th>
               <th>longitude</th>
@@ -123,7 +123,7 @@ class GeolocCities extends LitElement {
             ${this.selection.map(city => html`
               <tr class="row">
                 <td>${city.id}</td>
-                <td>${city.name}</td>
+                <td>${city.city}</td>
                 <td>${city.zipcode}</td>
                 <td>${city.lat}</td>
                 <td>${city.long}</td>
