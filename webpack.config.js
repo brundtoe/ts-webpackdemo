@@ -65,7 +65,7 @@ const webpackConfig = {
             loader: 'url-loader',
             options: {
               limit: 8192,
-              name: '[name].[fullhash:8].[ext]',
+              name: '[name].[fullhash].[ext]',
               outputPath: path.resolve(__dirname, './dist/assets/images')
             }
           }
@@ -92,7 +92,7 @@ const webpackConfig = {
       }
     ),
     new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
+      filename: '[name].[fullhash].css',
       chunkFilename: '[id].css'
     }),
     new CopyWebpackPlugin(
