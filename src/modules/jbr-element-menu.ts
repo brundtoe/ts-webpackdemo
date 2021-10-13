@@ -1,4 +1,4 @@
-import { LitElement, html,css } from 'lit-element';
+import { LitElement, html,css } from 'lit';
 import {MenuItems} from './menuType'
 import data from './menuitems'
 

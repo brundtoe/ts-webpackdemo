@@ -16,7 +16,7 @@ interface City {
     northing: number | null
 }
 
-import {LitElement, html, css} from 'lit-element'
+import {LitElement, html, css} from 'lit'
 
 const cities: Array<City> = require('../assets/data/geoloc.cities.json')
 

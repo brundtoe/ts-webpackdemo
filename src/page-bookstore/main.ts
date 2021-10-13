@@ -3,7 +3,7 @@ import '../scss/index.scss'
 import './page.scss'
 
 import {bookstore} from '../assets/data/bookstore'
-import {LitElement, html, css} from 'lit-element'
+import {LitElement, html, css} from 'lit'
 
 interface Customer {
   name: string,

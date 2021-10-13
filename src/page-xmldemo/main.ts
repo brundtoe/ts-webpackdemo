@@ -2,7 +2,7 @@ import 'bootstrap'
 import '../scss/index.scss'
 import './page.scss'
 
-import {LitElement, html, css, TemplateResult} from 'lit-element'
+import {LitElement, html, css, TemplateResult} from 'lit'
 import Pattern from './moduler/pattern'
 
 document.addEventListener('DOMContentLoaded', () => {
