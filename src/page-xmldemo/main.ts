@@ -71,7 +71,8 @@ class AuthorsXmldemo extends LitElement {
                 return
             }
             this.result = this.pattern.execQuery(theQuery)
-        } catch (error) {
+        } catch (error: unknown) {
+            // @ts-ignore
             this.result = html `<strong>${error.message}</strong>`
         }
     }

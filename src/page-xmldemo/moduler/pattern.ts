@@ -23,8 +23,10 @@ export default class Pattern {
                 return data.text()
             })
             return {xmlText, xslText}
-        } catch (error) {
+        } catch (error: unknown) {
+            // @ts-ignore
             docElement.renderHtml('error', error.message)
+            // @ts-ignore
             throw new Error(error.message)
         }
     }
@@ -53,6 +55,7 @@ export default class Pattern {
         } catch (error) {
             console.log('rethrown error', error)
             console.log('denne fejl er fra performQuery')
+            // @ts-ignore
             docElement.renderHtml('error', error.message)
             throw error
         }
