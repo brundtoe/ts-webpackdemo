@@ -26,7 +26,7 @@ const webpackConfig = {
     filename: '[name][fullhash].js'
   },
   devServer: {
-    contentBase: path.resolve(__dirname, './dist'),
+    //contentBase: path.resolve(__dirname, './dist'),
     hot: true
   },
   module: {
