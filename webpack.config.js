@@ -84,13 +84,6 @@ const webpackConfig = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new webpack.ProvidePlugin(
-      {
-        $: 'jquery',
-        jQuery: 'jquery',
-        'window.jQuery': 'jquery'
-      }
-    ),
     new MiniCssExtractPlugin({
       filename: '[name].[fullhash].css',
       chunkFilename: '[id].css'
