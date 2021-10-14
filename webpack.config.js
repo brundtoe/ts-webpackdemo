@@ -45,18 +45,7 @@ const webpackConfig = {
       },
       {
         test: [/\.css$|.scss$/],
-        use: [MiniCssExtractPlugin.loader,
-          'css-loader',
-          {
-            loader: 'postcss-loader',
-            options: {
-              postcssOptions: {
-                plugins:
-                  ['postcss-preset-env']
-              }
-            }
-          },
-          'sass-loader']
+        use: ['style-loader', 'css-loader','sass-loader']
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -84,6 +73,13 @@ const webpackConfig = {
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new webpack.ProvidePlugin(
+      {
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
+      }
+    ),
     new MiniCssExtractPlugin({
       filename: '[name].[fullhash].css',
       chunkFilename: '[id].css'
