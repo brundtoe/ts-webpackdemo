@@ -1,5 +1,6 @@
 {
   "nodeVersion": "system",
   "baseUrl": "http://localhost:8080",
-  "includeShadowDom": true
+  "includeShadowDom": true,
+  "integrationFolder": "cypress/integration/webpackdemo"
 }
