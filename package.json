@@ -10,7 +10,8 @@
     "build": "rm -r dist && webpack --config webpack.config.js",
     "depreaction": "node --trace-deprecation node_modules/webpack/bin/webpack.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress": "npx cypress open"
+    "cypress.open": "npx cypress open",
+    "cypress.run": "npx cypress run"
   },
   "keywords": [],
   "author": "",
