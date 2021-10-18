@@ -6,7 +6,7 @@
     "strict": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "module": "es6",
+    "module": "esnext",
     "moduleResolution": "node",
     "target": "es2020",
     "allowJs": true,
