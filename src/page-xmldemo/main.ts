@@ -55,19 +55,19 @@ class AuthorsXmldemo extends LitElement {
         `
     }
 
-    performQuery(event: { target: HTMLElement }) {
+    async performQuery(event: { target: HTMLElement }) {
         try {
-            this.pattern.fetchFiles().then(res => {
-                //@ts-ignore
-                const {xmlText, xslText} = res
+            // @ts-ignore
+            if (this.pattern.xmlDom.childElementCount == 0) {
+                const {xmlText, xslText} = await this.pattern.fetchFiles()
                 this.pattern.convertXml(xmlText, xslText)
+            }
+            let theQuery: string | null = event.target.textContent
+            if (!theQuery) {
+                return
+            }
+            this.result = this.pattern.execQuery(theQuery)
 
-                let theQuery: string | null = event.target.textContent
-                if (!theQuery) {
-                    return
-                }
-                this.result = this.pattern.execQuery(theQuery)
-            })
         } catch (error: unknown) {
             // @ts-ignore
             this.result = html`<strong>${error.message}</strong>`
