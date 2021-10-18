@@ -17,27 +17,27 @@ class AuthorsXmldemo extends LitElement {
 
     static get properties() {
         return {
-            pattern: {attribute: false },
+            pattern: {attribute: false},
             result: {attribute: false}
         }
     }
 
     static get styles() {
         return css`
-    :host {
-      display: block;
-      margin: auto;
-      background-color: #d4d4d4;
-      border: 1px solid #d5d5d5;
-      align-items: center;
-      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-      border-radius: 3px;
-      overflow: hidden;
-      padding: 10px;
-      box-sizing: border-box;
-      font-family: sans-serif;
-    }
-   `
+          :host {
+            display: block;
+            margin: auto;
+            background-color: #d4d4d4;
+            border: 1px solid #d5d5d5;
+            align-items: center;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+            overflow: hidden;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+          }
+        `
     }
 
     constructor() {
@@ -45,35 +45,32 @@ class AuthorsXmldemo extends LitElement {
         const baseUrl = '/assets/data'
         this.pattern = new Pattern(`${baseUrl}/Hilite-xml.xsl`, `${baseUrl}/Authors.xml`)
 
-        const result = this.pattern.fetchFiles()
-
-        result.then(res => {
-            //@ts-ignore
-            const {xmlText, xslText} = res
-            this.pattern.convertXml(xmlText, xslText)
-            this.result = html`<h3>Filerne er indlæst</h3>`
-        })
-
     }
 
     render() {
         return html`
-    <p>Queries foretages med XPATH</p>
-    <slot name="queries" @click="${this.performQuery}"></slot>
-    <div>${this.result}</div>
-    `
+          <p>Queries foretages med XPATH</p>
+          <slot name="queries" @click="${this.performQuery}"></slot>
+          <div>${this.result}</div>
+        `
     }
 
     performQuery(event: { target: HTMLElement }) {
         try {
-            let theQuery: string | null = event.target.textContent
-            if (!theQuery) {
-                return
-            }
-            this.result = this.pattern.execQuery(theQuery)
+            this.pattern.fetchFiles().then(res => {
+                //@ts-ignore
+                const {xmlText, xslText} = res
+                this.pattern.convertXml(xmlText, xslText)
+
+                let theQuery: string | null = event.target.textContent
+                if (!theQuery) {
+                    return
+                }
+                this.result = this.pattern.execQuery(theQuery)
+            })
         } catch (error: unknown) {
             // @ts-ignore
-            this.result = html `<strong>${error.message}</strong>`
+            this.result = html`<strong>${error.message}</strong>`
         }
     }
 

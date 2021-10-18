@@ -13,9 +13,6 @@ describe('Webpack page Authors', () => {
     cy.get('#topnavbar > ul > li')
       .should('have.length',8)
 
-    cy.get('authors-xmldemo').shadow()
-      .find('h3')
-      .contains('Filerne er indlæst')
   })
 
   it('Queries component loaded',() => {
