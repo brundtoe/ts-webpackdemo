@@ -22,7 +22,6 @@
     "http-server": "^13.0.2",
     "lit": "^2.0.2",
     "normalize.css": "^8.0.1",
-    "popper.js": "^1.16.1",
     "postcss": "^8.2.8",
     "style-loader": "^3.3.0",
     "usng.js": "^0.4.5"
