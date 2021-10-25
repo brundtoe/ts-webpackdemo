@@ -48,6 +48,7 @@ export default class Pattern {
         try {
             const queryResult: Document | DocumentFragment = performQuery(query, this.xmlDom)
             if(!queryResult) {
+                // noinspection ExceptionCaughtLocallyJS
                 throw new Error('ingen resultat fra din query')
             }
             console.log('fortsætter med transformering')

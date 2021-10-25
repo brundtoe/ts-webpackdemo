@@ -11,7 +11,8 @@ export function performQuery(path: string, doc: Document): Document | DocumentFr
   try {
     let nodesSnapshot: XPathResult = doc.evaluate(path, doc, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null)
     if (nodesSnapshot.snapshotLength === 0) {
-      throw new Error('Dette er ikke en gyldig XPATH expression')
+      // noinspection ExceptionCaughtLocallyJS
+        throw new Error('Dette er ikke en gyldig XPATH expression')
     }
 
     let xmldom = document.implementation.createDocument('', 'root', null)
