@@ -103,6 +103,7 @@ class GeolocCities extends LitElement {
     render() {
         return html`
           <h2>Danske Regioner</h2>
+          <!--suppress HtmlUnknownTag -->
           <slot name="regions" @click="${this.selectRegion}"></slot>
           <input type="button" id="readCities" @click="${this.resetCities}" value="Show all cities">
           <p>&nbsp;</p>

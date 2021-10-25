@@ -14,6 +14,7 @@
     </style>
 </head>
 <body>
+<!--suppress HtmlUnknownTag -->
 <jbr-element-menu></jbr-element-menu>
 <section class="container">
     <div class="col-sm-8>">
@@ -21,7 +22,10 @@
         <div>
             <p class="lead">Webcomponent Template inserted in page</p>
         </div>
-        <p><a href="../index.html">Retur til startsiden</a></p>
+
+        <p><!--suppress HtmlUnknownTarget -->
+            <a href="../index.html">Retur til startsiden</a></p>
+        <!--suppress HtmlUnknownTag -->
         <bookstore-authors>
 
         </bookstore-authors>
@@ -42,10 +46,12 @@
         th, td {
             padding: 5px;
         }
+
         .thead-row {
             background: #FF0
         }
-/* .row er defineret i bootstrap derfor jbr-row */
+
+        /* .row er defineret i bootstrap derfor jbr-row */
         .jbr-row:first-child {
             background: #FFF
         }

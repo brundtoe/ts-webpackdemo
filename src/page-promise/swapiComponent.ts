@@ -1,6 +1,5 @@
 import style from '../scss/componentStyle'
-import docElement from '../modules/renderElement'
-import {SwapiTypes, FetchError} from "./swapiTypes";
+import {SwapiTypes} from "./swapiTypes";
 import handleResponse from "./handleResponsedata"
 import handleError from "./handleResponseError"
 
@@ -49,12 +48,10 @@ class SwapiComponent extends HTMLElement {
             })
             .then(data => {
                 console.log(data)
-                const res = handleResponse(data)
-                this.domElement.innerHTML = res
+                this.domElement.innerHTML = handleResponse(data)
             })
             .catch(error => {
-                const res: string = handleError(error)
-                this.domElement.innerHTML = res
+                this.domElement.innerHTML = handleError(error)
             })
     }
 }

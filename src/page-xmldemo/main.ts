@@ -50,6 +50,7 @@ class AuthorsXmldemo extends LitElement {
     render() {
         return html`
           <p>Queries foretages med XPATH</p>
+          <!--suppress HtmlUnknownTag -->
           <slot name="queries" @click="${this.performQuery}"></slot>
           <div>${this.result}</div>
         `

@@ -82,6 +82,7 @@ class BookstoreCustomers extends LitElement {
   render() {
     return html`
   <h2>Bookstore Customers</h2>
+  <!--suppress HtmlUnknownTag -->
   <slot name="states" @click="${this.selectState}"></slot>
   <input type="button" data-test="readCustomers" @click="${this.resetCustomers}" value="Show all customers">
   <p>&nbsp;</p>

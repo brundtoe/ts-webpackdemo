@@ -22,7 +22,8 @@ const style = `.flex-container {
 const template: HTMLElement = document.createElement('section')
 
 template.innerHTML = `
-  <nav  class="flex-container">
+<!--suppress HtmlUnknownTarget -->  
+<nav  class="flex-container">
     <a data-test="menuJackie" href="#"><strong>Jackie Menu</strong></a>
     <a data-test="home" href="/index.html">Home</a>
     <a data-test="authors" href="/authors.html">Authors</a>

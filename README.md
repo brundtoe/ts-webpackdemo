@@ -2,7 +2,7 @@
 
 ##  Opdatering 15. marts 2021
 
-webpack 5 opgradering udført
+Webpack 5 opgradering udført
 
 ## Se beskrivelsen i PyCharm vejl
 
@@ -24,7 +24,7 @@ webpack 5 opgradering udført
 
 ## Test end2end med Cypress
 
-testen runnes med::
+Testen runnes med::
 
     npx cypress open
 

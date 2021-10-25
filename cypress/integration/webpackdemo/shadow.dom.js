@@ -5,7 +5,7 @@ describe('bookstore wih shadow dom enabled',{"includeShadowDom": true}, () => {
   })
 
   it('dummy', () => {
-    cy.get('[data-test=readCustomers')
+    cy.get('[data-test=readCustomers]')
       .click()
 
     cy.get('table.show > tbody')

@@ -10,7 +10,7 @@ services:
     volumes:
       - ./dist:/usr/share/nginx/html
     ports:
-      - 80:80
+      - "80:80"
     networks:
       - default
 
