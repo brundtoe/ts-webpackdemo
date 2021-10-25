@@ -43,7 +43,7 @@ class FetchComponent extends LitElement {
             this.showTable = true
         }).catch( err => this.error = err.message)
     }
-
+    // noinspection JSUnusedGlobalSymbols
     async fetchHtml(event: Event) {
 
         event.preventDefault()

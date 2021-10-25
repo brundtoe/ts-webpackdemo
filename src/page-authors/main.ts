@@ -18,6 +18,7 @@ class BookstoreAuthors extends HTMLElement {
     super()
   }
 
+  // noinspection JSUnusedGlobalSymbols
   connectedCallback () {
     const template = document.getElementById('layout')
     //@ts-ignore

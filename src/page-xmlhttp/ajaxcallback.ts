@@ -28,6 +28,7 @@ class AjaxCallback extends HTMLElement {
         //@ts-ignore
 
     }
+    // noinspection JSUnusedGlobalSymbols
     connectedCallback() {
         //@ts-ignore
         const resultTable = <HTMLElement>this.shadowRoot.querySelector('#resultTable')
@@ -48,6 +49,7 @@ class AjaxCallback extends HTMLElement {
             xhr.send()
         }
 
+    // noinspection JSUnusedGlobalSymbols
     disconnectedCallback() {
         console.log('ajax-callback er fjernet')
     }

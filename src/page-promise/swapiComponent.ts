@@ -32,6 +32,7 @@ class SwapiComponent extends HTMLElement {
         this.domElement = this.shadowRoot.getElementById('resultTable')
     }
 
+    // noinspection JSUnusedGlobalSymbols
     connectedCallback() {
         //@ts-ignore
         window.fetch(this.url, {

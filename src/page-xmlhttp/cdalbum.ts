@@ -28,7 +28,7 @@ class CdAlbum extends HTMLElement {
         this.shadowRoot.appendChild(template.cloneNode(true))
 
     }
-
+    // noinspection JSUnusedGlobalSymbols
     connectedCallback() {
         //@ts-ignore
         const showCd = <HTMLElement>this.shadowRoot.querySelector('#showCd')
