@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+// noinspection JSValidateTypes,JSUnusedLocalSymbols
 
 context('Cypress.Commands', () => {
   beforeEach(() => {

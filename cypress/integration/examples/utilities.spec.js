@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-// noinspection JSUnresolvedFunction
+// noinspection JSUnresolvedFunction,JSUnusedLocalSymbols
 
 context('Utilities', () => {
   beforeEach(() => {
