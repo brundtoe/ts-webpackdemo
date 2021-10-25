@@ -1,5 +1,9 @@
 # Demo webpack 5, TypeScript 4 og Boostrap 4
 
+## Opdatering oktober 2021
+
+- webstorm inspections udført, resterende kan ikke fjernes
+
 ##  Opdatering 15. marts 2021
 
 Webpack 5 opgradering udført
