@@ -43,7 +43,7 @@ const webpackConfig = {
         exclude: /node_modules/
       },
       {
-        test: [/\.css$|.scss$/],
+        test: [/(\.css$|\.scss$)/],
         use: ['style-loader', 'css-loader','sass-loader']
       },
       {
