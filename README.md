@@ -3,6 +3,8 @@
 ## Opdatering oktober 2021
 
 - webstorm inspections udført, resterende kan ikke fjernes
+- node packages opdateret
+- hold på types/node verison 14 da det er node v 14 der anvendes
 
 ##  Opdatering 15. marts 2021
 
