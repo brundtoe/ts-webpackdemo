@@ -24,7 +24,7 @@
                 <xsl:attribute name="id">
                     <xsl:value-of select="generate-id()"/>
                 </xsl:attribute>&lt;<xsl:value-of select="name()"/><xsl:apply-templates select="@*"/>&gt;</SPAN>
-            <xsl:apply-templates select="node()"/>
+            <xsl:apply-templates />
             <SPAN STYLE="color:olive">&lt;/<xsl:value-of select="name()"/>&gt;</SPAN>
         </DIV>
     </xsl:template>

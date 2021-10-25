@@ -25,7 +25,7 @@ describe('Webpack page geoloc ', () => {
 
   it('Region Nordjylland has 10 cities', () => {
     cy.get('geoloc-cities > ul')
-      .find('li:first()')
+      .find('li:first')
       .contains('Nordjylland')
       .click()
 

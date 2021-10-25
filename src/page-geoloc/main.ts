@@ -105,6 +105,7 @@ class GeolocCities extends LitElement {
           <h2>Danske Regioner</h2>
           <!--suppress HtmlUnknownTag -->
           <slot name="regions" @click="${this.selectRegion}"></slot>
+          <!--suppress HtmlUnknownAttribute -->
           <input type="button" id="readCities" @click="${this.resetCities}" value="Show all cities">
           <p>&nbsp;</p>
           <table class="${this.showTable ? 'show' : 'hide'}">

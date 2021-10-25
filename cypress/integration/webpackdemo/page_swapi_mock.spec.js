@@ -77,7 +77,7 @@ describe('mock and return luke skywalker', () => {
     cy.get('swapi-component')
       .shadow()
       .find('#resultTable > tbody')
-      .find('tr:first() > td:nth-child(2)')
+      .find('tr:first > td:nth-child(2)')
       .contains('Luke Skywalker')
   })
 })

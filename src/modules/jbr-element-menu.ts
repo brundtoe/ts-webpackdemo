@@ -45,7 +45,8 @@ class JbrElementMenu extends LitElement {
     return html`
     <nav class="flex-container">
       ${this.items.map((item) =>
-        html`<a id="${item.id}" href="${item.link}">${item.text}</a>`
+        html`<!--suppress HtmlUnknownTarget -->
+        <a id="${item.id}" href="${item.link}">${item.text}</a>`
       )}
     </nav>
      `
