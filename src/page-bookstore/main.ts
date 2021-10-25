@@ -109,7 +109,7 @@ class BookstoreCustomers extends LitElement {
   }
 
 
-  resetCustomers(event: Event) {
+  resetCustomers() {
     this.selection = this.customers
     this.showTable = true
   }

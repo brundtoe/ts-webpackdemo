@@ -25,7 +25,7 @@ class BookstoreAuthors extends HTMLElement {
     this.appendChild(clone)
     const buttonAuthor = this.querySelector('#readAuthors')
     //@ts-ignore
-    buttonAuthor.addEventListener('click', e => {
+    buttonAuthor.addEventListener('click', () => {
       // console.log('buttonCustomer',buttonCustomer)
       this.handleResponse(bookstore.authors.filter(author => author.id <= 12))
     })

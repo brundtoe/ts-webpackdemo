@@ -138,7 +138,7 @@ class GeolocCities extends LitElement {
         `
     }
 
-    resetCities(event: Event) {
+    resetCities() {
         this.selection = this.cities.map(city => {
             let utmCoord = converter.LLtoUTM(city.lat, city.long, [])
             console.log(utmCoord)
