@@ -1,6 +1,24 @@
-$h2-bg-color: yellow;
-$h2-width: 600px;
-$table-border-color: green;
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+$jb-cyan: #00b7ff;
+$jb-light: #f8f9fa;
+$jb-dark: #343a40;
+
+:root {
+  -font-family-sans-serif: "Nunito", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
 body {
   margin: 0;
@@ -9,42 +27,18 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
-  color: #212529;
   text-align: left;
-  background-color: #f8fafc;
+  color: $jb-dark;
+  background-color: $jb-light;
   background-image: url(../assets/images/bg_tile.jpg);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+a {
+  color: $jb-cyan;
+  text-decoration: none;
 }
-
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-.display-5 {
-  font-size: 3.0rem;
-  font-weight: 300;
-  line-height: 1.2;
-}
-
-hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  background-color: $h2-bg-color;
-  width: $h2-width;
+.btn-link {
+  text-decoration: none;
 }
 
 th, td {
