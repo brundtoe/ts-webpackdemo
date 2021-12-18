@@ -27,7 +27,7 @@ class SwapiComponent extends HTMLElement {
         this.shadowRoot.appendChild(stylesheet.cloneNode(true))
         //@ts-ignore
         this.shadowRoot.appendChild(template.cloneNode(true))
-        this.url = "https://swapi.dev/api/people/9"
+        this.url = "https://www.swapi.tech/api/people/9"
         //@ts-ignore
         this.domElement = this.shadowRoot.getElementById('resultTable')
     }
