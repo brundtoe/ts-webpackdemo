@@ -28,13 +28,13 @@
     "usng.js": "^0.4.5"
   },
   "devDependencies": {
-    "@types/node": "^14.17.26",
+    "@types/node": "^17.0.31",
     "autoprefixer": "^10.2.5",
     "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^9.0.1",
+    "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.4.0",
-    "cypress": "^8.6.0",
-    "cypress-intellij-reporter": "0.0.6",
+    "cypress": "^9.6.0",
+    "cypress-intellij-reporter": "0.0.7",
     "file-loader": "^6.2.0",
     "html-loader": "^3.0.0",
     "html-webpack-plugin": "^5.3.1",
