@@ -1,4 +1,4 @@
-const swapi_url = 'https://swapi.dev/api/people/9'
+const swapi_url = 'https://swapi.dev/api/people/9/?format=json'
 
 describe('Mocking swapi', () => {
 
@@ -22,6 +22,7 @@ describe('Mocking swapi', () => {
       })
   })
 })
+/**
 describe('mock and return luke skywalker', () => {
 
   beforeEach(() => {
@@ -81,3 +82,4 @@ describe('mock and return luke skywalker', () => {
       .contains('Luke Skywalker')
   })
 })
+*/
