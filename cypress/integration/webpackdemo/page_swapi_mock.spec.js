@@ -22,7 +22,7 @@ describe('Mocking swapi', () => {
       })
   })
 })
-/**
+
 describe('mock and return luke skywalker', () => {
 
   beforeEach(() => {
@@ -82,4 +82,4 @@ describe('mock and return luke skywalker', () => {
       .contains('Luke Skywalker')
   })
 })
-*/
+

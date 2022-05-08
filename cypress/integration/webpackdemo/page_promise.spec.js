@@ -8,7 +8,7 @@ describe('Webpack page Promise', () => {
     cy.get('#topnavbar > ul > li')
       .should('have.length', 8)
   })
-/**
+
   it('Page has component swapi-component', () => {
     cy.get('swapi-component')
       .shadow()
@@ -28,7 +28,6 @@ describe('Webpack page Promise', () => {
       .find('#resultTable > tbody')
       .find('tr:first > td:nth-child(2)')
       .contains('Biggs Darklighter')
-
   })
-*/
+
 })

@@ -1,6 +1,4 @@
 export interface SwapiTypes {
-    result: {
-        properties: {
             birth_year: string,
             created: string,
             edited: string,
@@ -17,8 +15,6 @@ export interface SwapiTypes {
             starships: Array<string>,
             url: string,
             vehicles: Array<string>
-        }
-    }
 }
 
 export interface FetchError extends Error{
