@@ -1,10 +1,10 @@
 # Demo webpack 5, TypeScript 4 og Boostrap 4
 
-## Opdatering oktober 2021
+## Opdatering december 2022
 
 - webstorm inspections udført, resterende kan ikke fjernes
 - node packages opdateret
-- hold på types/node verison 14 da det er node v 14 der anvendes
+- cypress test udført med docker run, http server run og webpack-dev-server
 
 ##  Opdatering 15. marts 2021
 
