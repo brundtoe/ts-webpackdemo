@@ -1,4 +1,4 @@
-version: '3.6'
+version: '3.8'
 
 services:
 
@@ -16,5 +16,5 @@ services:
 
 networks:
   default:
-    external:
-      name: humle_net
+    external: true
+    name: humle_net

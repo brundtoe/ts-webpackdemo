@@ -848,7 +848,7 @@ export const bookstore = {
     {
       "id": 29,
       "name": "christina masterson",
-      "city": "petersbourgh",
+      "city": "petersburg",
       "state": "pensylvania",
       "country": "USA",
       "mail": "christina@masterson.nu"
