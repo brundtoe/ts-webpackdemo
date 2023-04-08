@@ -1,5 +1,18 @@
 # Demo webpack 5, TypeScript 4 og Boostrap 4
 
+## Opdatering april 2023
+
+npm update udført bortset fra typescript til 5.0.4
+
+appen kan kompilere og kører med typescript 7
+
+**important**
+Cypress 12.9.0 kan ikke compilere med typescript 5.0.4
+
+Kendt issue
+> https://github.com/cypress-io/cypress/issues/26203
+
+
 ## Opdatering december 2022
 
 - webstorm inspections udført, resterende kan ikke fjernes
