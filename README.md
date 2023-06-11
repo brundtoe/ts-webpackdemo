@@ -1,10 +1,10 @@
 # Demo webpack 5, TypeScript 4 og Boostrap 4
 
-## Opdatering april 2023
+## Opdatering juni 2023
 
-npm update udført bortset fra typescript til 5.0.4
+npm update udført bortset fra typescript til 5.1.3
 
-appen kan kompilere og kører med typescript 7
+appen kan kompilere og kører med typescript 4.9.5
 
 **important**
 Cypress 12.9.0 kan ikke compilere med typescript 5.0.4
