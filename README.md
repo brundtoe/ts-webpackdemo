@@ -1,12 +1,26 @@
 # Demo webpack 5, TypeScript 4 og Boostrap 4
 
+## Opdtering august 2023
+
+- Opgraderet til typescript 5.1.6 og cypress 12.17.3
+- i tscofig.json sat  "sourceMap": false,
+
+Med denne anbefalede omgåelse fungerer det med typscript 5.x
+
+Det Kendte issue eksisterer fortsat
+> https://github.com/cypress-io/cypress/issues/26203
+
+Cypress kan nu rapportere forkert linje for fejl
+
+Hvis debug giver bøvl uden sorucemap så reaktiver sourcemap midlertidigt
+
 ## Opdatering juni 2023
 
-npm update udført bortset fra typescript til 5.1.3
+Npm update udført bortset fra typescript til 5.1.3
 
-appen kan kompilere og kører med typescript 4.9.5
+Appen kan kompilere og kører med typescript 4.9.5
 
-**important**
+**Important**
 Cypress 12.9.0 kan ikke compilere med typescript 5.0.4
 
 Kendt issue

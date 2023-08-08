@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "lib": ["dom","es2020","dom.iterable"],
-    "sourceMap": true,
+    "sourceMap": false,
     "strict": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
