@@ -1,7 +1,6 @@
 import { defineConfig } from "cypress";
 
 export default defineConfig({
-  nodeVersion: "system",
   includeShadowDom: true,
 
   e2e: {

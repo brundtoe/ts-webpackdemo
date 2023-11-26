@@ -1,8 +1,8 @@
 # Demo webpack 5, TypeScript 4 og Boostrap 4
 
-## Opdatering august 2023
+## Opdatering november 2023
 
-- Opgraderet til typescript 5.1.6 og cypress 12.17.3
+- Opgraderet til typescript 5.3.2 og cypress 13.6.0
 - i tscofig.json sat  "sourceMap": false,
 
 Med denne anbefalede omgåelse fungerer det med typscript 5.x
