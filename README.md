@@ -1,6 +1,6 @@
 # Demo webpack 5, TypeScript 4 og Boostrap 4
 
-## Opdtering august 2023
+## Opdatering august 2023
 
 - Opgraderet til typescript 5.1.6 og cypress 12.17.3
 - i tscofig.json sat  "sourceMap": false,
@@ -12,7 +12,7 @@ Det Kendte issue eksisterer fortsat
 
 Cypress kan nu rapportere forkert linje for fejl
 
-Hvis debug giver bøvl uden sorucemap så reaktiver sourcemap midlertidigt
+Hvis debug giver bøvl uden sourcemap så reaktiver sourcemap midlertidigt
 
 ## Opdatering juni 2023
 
