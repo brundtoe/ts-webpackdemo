@@ -1,5 +1,20 @@
 # Demo webpack 5, TypeScript 4 og Boostrap 4
 
+## august 2024
+
+Følgende node packages er låst fsva versionsnummer
+    - sass
+    - sass-loader
+    - css-loader
+
+Opdateringer vil give compilerngsfejl og fejl i de genererede stylesheets
+
+Egne style difinitioenr anvender ikke nestede css deklarationer
+
+Årsagen er primært sass deprecation af nestede css declarationer, hvilket ikke kan rettes da det kan henføres til bootstrap (jf. stackoverflow)
+
+> https://sass-lang.com/documentation/breaking-changes/mixed-decls/
+
 ## Opdatering november 2023
 
 - Opgraderet til typescript 5.3.2 og cypress 13.6.0
