@@ -24,29 +24,29 @@
     "lit": "~3.1.0",
     "normalize.css": "^8.0.1",
     "postcss": "^8.2.8",
-    "style-loader": "^3.3.0",
-    "usng.js": "^0.4.5"
+    "style-loader": "~4.0.0",
+    "usng.js": "~0.4.5"
   },
   "devDependencies": {
-    "@types/node": "~20.12.2",
+    "@types/node": "~22.0.2",
     "autoprefixer": "^10.2.5",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^12.0.2",
-    "css-loader": "^6.4.0",
-    "cypress": "13.6.0",
+    "css-loader": "~6.11.0",
+    "cypress": "13.13.2",
     "cypress-intellij-reporter": "0.0.7",
     "file-loader": "^6.2.0",
     "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.3.1",
     "sass": "^1.43.2",
-    "sass-loader": "^14.1.1",
+    "sass-loader": "~14.2.1",
     "ts-lit-plugin": "~2.0.1",
     "ts-loader": "^9.2.6",
     "ts-node": "^10.3.0",
-    "typescript": "~5.4.3",
+    "typescript": "~5.5.4",
     "url-loader": "^4.1.1",
-    "webpack": "^5.25.1",
-    "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^5.0.4"
+    "webpack": "~5.93.0",
+    "webpack-cli": "~5.1.4",
+    "webpack-dev-server": "~5.0.4"
   }
 }
