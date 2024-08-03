@@ -2,17 +2,17 @@
 
 ## august 2024
 
-Følgende node packages er låst fsva versionsnummer
-    - sass
-    - sass-loader
-    - css-loader
+Udfordringer med css-loader, sass og sassl-loader løst
 
-Opdateringer vil give compilerngsfejl og fejl i de genererede stylesheets
+Variable skal i css filer anvendes med
 
-Egne style difinitioenr anvender ikke nestede css deklarationer
+     background-color: #{$jb-light};
 
-Årsagen er primært sass deprecation af nestede css declarationer, hvilket ikke kan rettes da det kan henføres til bootstrap (jf. stackoverflow)
+Det var denne der var årsagen
 
+> https://sass-lang.com/documentation/breaking-changes/css-vars/
+
+Det var ikke som første antaget denne
 > https://sass-lang.com/documentation/breaking-changes/mixed-decls/
 
 ## Opdatering november 2023

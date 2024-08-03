@@ -28,13 +28,13 @@ body {
   font-weight: 400;
   line-height: 1.6;
   text-align: left;
-  color: $jb-dark;
-  background-color: $jb-light;
+  color: #{$jb-dark};
+  background-color: #{$jb-light};
   background-image: url(../assets/images/bg_tile.jpg);
 }
 
 a {
-  color: $jb-cyan;
+  color: #{$jb-cyan};
   text-decoration: none;
 }
 .btn-link {
