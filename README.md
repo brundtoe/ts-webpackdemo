@@ -1,5 +1,15 @@
 # Demo webpack 5, TypeScript 4 og Boostrap 4
 
+## december 2024
+
+branch master fungerer med 
+    sass låst til 1.64.2 og sass-loader til 14.2.1
+
+branch develop-sass anvendes til eksperimenter med opgradering til seneste udgaver af sass og sass-loader
+
+
+
+
 ## august 2024
 
 Udfordringer med css-loader, sass og sassl-loader løst
