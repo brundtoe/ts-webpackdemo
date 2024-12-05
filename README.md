@@ -2,13 +2,19 @@
 
 ## december 2024
 
-branch master fungerer med 
+Branch master fungerer med 
     sass låst til 1.64.2 og sass-loader til 14.2.1
 
-branch develop-sass anvendes til eksperimenter med opgradering til seneste udgaver af sass og sass-loader
+Branch develop-sass anvendes til eksperimenter med opgradering til seneste udgaver af sass og sass-loader 
 
+Udfordringene er bootstrap inkompabilitet med den igangværende omlægninger af Sass API
 
+> https://github.com/twbs/bootstrap/issues/40849
+> https://github.com/twbs/bootstrap/issues/40962
 
+I de to issues beskrives workarpund i webpack.config.js.
+
+Har fastholdt løsning med låste versioner af sass og sass-loader.
 
 ## august 2024
 
