@@ -12,9 +12,14 @@ services:
     ports:
       - "80:80"
     networks:
-      - default
+      default:
+        ipv4_address: ${NGINX_ADDRESS}
 
 networks:
   default:
     external: true
     name: humle_net
+    ipam:
+      driver: default
+      config:
+        - subnet: ${SUBNET}
