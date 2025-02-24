@@ -1,16 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-$jb-cyan: #00b7ff;
-$jb-light: #f8f9fa;
-$jb-dark: #343a40;
+
 
 :root {
   --font-family-sans-serif: "Nunito", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --jb-cyan: #00b7ff;
+  --jb-light: #f8f9fa;
+  --jb-dark: #343a40;
 }
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
+  --webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 html {
@@ -28,13 +29,13 @@ body {
   font-weight: 400;
   line-height: 1.6;
   text-align: left;
-  color: #{$jb-dark};
-  background-color: #{$jb-light};
+  color: var(--jb-dark);
+  background-color: var(--jb-light);
   background-image: url(../assets/images/bg_tile.jpg);
 }
 
 a {
-  color: #{$jb-cyan};
+  color: var(--jb-cyan);
   text-decoration: none;
 }
 .btn-link {

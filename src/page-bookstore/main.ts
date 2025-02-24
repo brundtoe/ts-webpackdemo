@@ -1,6 +1,6 @@
 import 'bootstrap'
-import '../scss/index.scss'
-import './page.scss'
+import '../scss/index.css'
+import './page.css'
 
 import {bookstore} from '../assets/data/bookstore'
 import {LitElement, html, css} from 'lit'

@@ -1,6 +1,6 @@
 import 'bootstrap'
-import '../scss/index.scss'
-import './page.scss'
+import '../scss/index.css'
+import './page.css'
 import './swapiComponent'
 
 document.addEventListener('DOMContentLoaded', () => {
