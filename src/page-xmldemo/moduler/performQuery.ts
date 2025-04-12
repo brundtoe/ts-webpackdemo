@@ -6,7 +6,7 @@
  */
 export function performQuery(path: string, doc: Document): Document | DocumentFragment {
   // skal være et snapshot, idet en iterator medfører fejl når der
-  // efterfølgende  manipuleres med resultatet på attribute og text nodes
+  // efterfølgende manipuleres med resultatet på attribute og text nodes
 
   try {
     let nodesSnapshot: XPathResult = doc.evaluate(path, doc, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null)

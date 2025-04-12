@@ -38,9 +38,6 @@ a {
   color: var(--jb-cyan);
   text-decoration: none;
 }
-.btn-link {
-  text-decoration: none;
-}
 
 th, td {
   padding: 5px;
