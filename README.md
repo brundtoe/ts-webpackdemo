@@ -21,7 +21,7 @@ Der blev oprindeligt anvendt Sass styelsheets, men disse er udfacet som følge a
     "watch": "webpack --config webpack.config.js --watch",
     "serve": "webpack serve --open",
     "build": "rm -r dist && webpack --config webpack.config.js",
-    "depreaction": "node --trace-deprecation node_modules/webpack/bin/webpack.js",
+    "deprecation": "node --trace-deprecation node_modules/webpack/bin/webpack.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress": "npx cypress open"
   },
