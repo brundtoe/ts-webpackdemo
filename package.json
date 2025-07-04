@@ -28,7 +28,7 @@
     "usng.js": "~0.4.5"
   },
   "devDependencies": {
-    "@types/node": "~22.15",
+    "@types/node": "~24.0.10",
     "autoprefixer": "~10.4",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "~13.0",
