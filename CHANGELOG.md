@@ -1,5 +1,9 @@
 # Changelog
 
+## 6. juli 2025
+
+Opgraderet Cypress fra 14.3.3 til 14.5.1
+
 ## 24. februar 2025
 
 Da det kun var src/scss/custom.scss, der anvendte sass variable blev disse ændret til standard css variable og alle stylesheets omdøbt fra ``*.scss`` til ``*.css``
