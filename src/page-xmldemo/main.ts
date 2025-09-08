@@ -37,6 +37,9 @@ class AuthorsXmldemo extends LitElement {
             box-sizing: border-box;
             font-family: sans-serif;
           }
+        em {
+            color: red;
+        }
         `
     }
 
@@ -61,7 +64,11 @@ class AuthorsXmldemo extends LitElement {
             // @ts-ignore
             if (this.pattern.xmlDom.childElementCount == 0) {
                 const {xmlText, xslText} = await this.pattern.fetchFiles()
-                this.pattern.convertXml(xmlText, xslText)
+                const {error, success} = this.pattern.convertXml(xmlText, xslText)
+                if (!success) {
+                    this.result = html`<em>${error}</em>`
+                    return
+                }
             }
             let theQuery: string | null = event.target.textContent
             if (!theQuery) {
@@ -71,7 +78,7 @@ class AuthorsXmldemo extends LitElement {
 
         } catch (error: unknown) {
             // @ts-ignore
-            this.result = html`<strong>${error.message}</strong>`
+            this.result = html`<em>${error.message}</em>`
         }
     }
 
