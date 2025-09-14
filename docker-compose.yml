@@ -3,7 +3,7 @@ version: '3.8'
 services:
 
   frontend:
-    image: nginx:bbr
+    image: nginx:jb-alpine
     container_name: frontend
     environment:
       DOCKER: 'true'
