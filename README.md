@@ -36,4 +36,4 @@ Testen runnes med::
 konfiguraitonen i cypress.json angiver
 
 - system node.js anvendes ej den i Cypress
-- baseUrl http://loclhost.8080 - hvilket svarer til default
+- baseUrl http://loclhost:8080 - hvilket svarer til default

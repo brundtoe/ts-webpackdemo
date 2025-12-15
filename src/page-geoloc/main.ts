@@ -18,7 +18,7 @@ interface City {
 
 import {LitElement, html, css} from 'lit'
 
-const cities: Array<City> = require('../assets/data/geoloc.cities.json')
+const cities: Array<City> = require('../assets/data/cities.json')
 
 const usng = require('usng.js')
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## 14. december 2025
+Ændringer
+- Filen geoloc.cities.json renamed til cities.json
+
 ## 6. juli 2025
 
 Opgraderet Cypress fra 14.3.3 til 14.5.1
