@@ -9,7 +9,7 @@ interface City {
     region: string,
     zipcode: number,
     lat: number,
-    long: number,
+    lon: number,
     population: number,
     zone: number | null,
     easting: number | null,
@@ -128,7 +128,7 @@ class GeolocCities extends LitElement {
                 <td>${city.city}</td>
                 <td>${city.zipcode}</td>
                 <td>${city.lat}</td>
-                <td>${city.long}</td>
+                <td>${city.lon}</td>
                 <td>${city.zone}</td>
                 <td>${city.easting}</td>
                 <td>${city.northing}</td>
@@ -140,7 +140,7 @@ class GeolocCities extends LitElement {
 
     resetCities() {
         this.selection = this.cities.map(city => {
-            let utmCoord = converter.LLtoUTM(city.lat, city.long, [])
+            let utmCoord = converter.LLtoUTM(city.lat, city.lon, [])
             console.log(utmCoord)
             city.zone = utmCoord.zoneNumber
             city.easting = Math.round(utmCoord.easting)
@@ -156,8 +156,8 @@ class GeolocCities extends LitElement {
             //@ts-ignore
             .filter(city => city.region === event.target.textContent)
             .map(city => {
-                let utmCoord = converter.LLtoUTM(city.lat, city.long, [])
-                console.log(converter.LLtoUSNG(city.lat, city.long, 5))
+                let utmCoord = converter.LLtoUTM(city.lat, city.lon, [])
+                console.log(converter.LLtoUSNG(city.lat, city.lon, 5))
                 //console.log(utmCoord)
                 city.zone = utmCoord.zoneNumber
                 city.easting = Math.round(utmCoord.easting)

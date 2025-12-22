@@ -6,7 +6,7 @@
     "municipality": "Frederikshavn",
     "region": "Nordjylland",
     "lat": 57.723661,
-    "long": 10.592629,
+    "lon": 10.592629,
     "population": 8003
   },
   {
@@ -16,7 +16,7 @@
     "municipality": "Frederikshavn",
     "region": "Nordjylland",
     "lat": 57.434336,
-    "long": 10.535442,
+    "lon": 10.535442,
     "population": 23296
   },
   {
@@ -26,7 +26,7 @@
     "municipality": "Aalborg",
     "region": "Nordjylland",
     "lat": 57.048177,
-    "long": 9.921098,
+    "lon": 9.921098,
     "population": 8003
   },
   {
@@ -35,8 +35,8 @@
     "zipcode": 9260,
     "municipality": "Aalborg",
     "region": "Nordjylland",
-    "lat": 56.997740,
-    "long": 9.993378,
+    "lat": 56.997741,
+    "lon": 9.993378,
     "population": 3562
   },
   {
@@ -46,7 +46,7 @@
     "municipality": "Aalborg",
     "region": "Nordjylland",
     "lat": 56.982376,
-    "long": 9.639181,
+    "lon": 9.639181,
     "population": 5249
   },
   {
@@ -56,7 +56,7 @@
     "municipality": "Holstebro",
     "region": "Midtjylland",
     "lat": 56.366667,
-    "long": 8.616667,
+    "lon": 8.616667,
     "population": 58504
   },
   {
@@ -66,7 +66,7 @@
     "municipality": "Fredericia",
     "region": "Syddanmark",
     "lat": 55.569108,
-    "long": 9.743121,
+    "lon": 9.743121,
     "population": 51427
   },
   {
@@ -76,7 +76,7 @@
     "municipality": "Vejle",
     "region": "Syddanmark",
     "lat": 55.708333,
-    "long": 9.533333,
+    "lon": 9.533333,
     "population": 56567
   },
   {
@@ -86,7 +86,7 @@
     "municipality": "Sønderborg",
     "region": "Syddanmark",
     "lat": 54.910931,
-    "long": 9.775241,
+    "lon": 9.775241,
     "population": 27801
   },
   {
@@ -96,7 +96,7 @@
     "municipality": "Tønder",
     "region": "Syddanmark",
     "lat": 54.947366,
-    "long": 8.871812,
+    "lon": 8.871812,
     "population": 7672
   },
   {
@@ -106,7 +106,7 @@
     "municipality": "Tønder",
     "region": "Syddanmark",
     "lat": 55.130067,
-    "long": 9.129332,
+    "lon": 9.129332,
     "population": 1223
   },
   {
@@ -116,7 +116,7 @@
     "municipality": "Tønder",
     "region": "Syddanmark",
     "lat": 55.058337,
-    "long": 8.829244,
+    "lon": 8.829244,
     "population": 1430
   },
   {
@@ -126,7 +126,7 @@
     "municipality": "Tønder",
     "region": "Syddanmark",
     "lat": 55.063625,
-    "long": 8.955735,
+    "lon": 8.955735,
     "population": 3594
   },
   {
@@ -136,7 +136,7 @@
     "municipality": "Herning",
     "region": "Midtjylland",
     "lat": 56.136111,
-    "long": 8.976667,
+    "lon": 8.976667,
     "population": 50039
   },
   {
@@ -146,7 +146,7 @@
     "municipality": "Ikast-Brande",
     "region": "Midtjylland",
     "lat": 56.136667,
-    "long": 9.161667,
+    "lon": 9.161667,
     "population": 15626
   },
   {
@@ -156,7 +156,7 @@
     "municipality": "Ikast-Brande",
     "region": "Midtjylland",
     "lat": 55.944167,
-    "long": 9.126389,
+    "lon": 9.126389,
     "population": 7307
   },
   {
@@ -166,7 +166,7 @@
     "municipality": "Ikast-Brande",
     "region": "Midtjylland",
     "lat": 55.963889,
-    "long": 9.398611,
+    "lon": 9.398611,
     "population": 1819
   },
   {
@@ -175,8 +175,8 @@
     "zipcode": 8000,
     "municipality": "Aarhus",
     "region": "Midtjylland",
-    "lat": 56.156610,
-    "long": 10.210190,
+    "lat": 56.146351,
+    "lon": 10.203891,
     "population": 277971
   },
   {
@@ -186,7 +186,7 @@
     "municipality": "Aarhus",
     "region": "Midtjylland",
     "lat": 56.095833,
-    "long": 10.136111,
+    "lon": 10.136111,
     "population": 9757
   },
   {
@@ -196,7 +196,7 @@
     "municipality": "Aarhus",
     "region": "Midtjylland",
     "lat": 56.234318,
-    "long": 10.230059,
+    "lon": 10.230059,
     "population": 10425
   },
   {
@@ -206,7 +206,7 @@
     "municipality": "Odense",
     "region": "Syddanmark",
     "lat": 55.401313,
-    "long": 10.387085,
+    "lon": 10.387085,
     "population": 179601
   },
   {
@@ -215,8 +215,8 @@
     "zipcode": 5500,
     "municipality": "Middelfart",
     "region": "Syddanmark",
-    "lat": 55.500000,
-    "long": 9.733333,
+    "lat": 55.500771,
+    "lon": 9.737451,
     "population": 15540
   },
   {
@@ -226,17 +226,17 @@
     "municipality": "Assens",
     "region": "Syddanmark",
     "lat": 55.269167,
-    "long": 9.899722,
+    "lon": 9.899722,
     "population": 6155
   },
   {
     "id": 24,
     "city": "Fåborg",
     "zipcode": 5600,
-    "municipality": "Fåborg-Midtfyn",
+    "municipality": "Fåborg",
     "region": "Syddanmark",
-    "lat": 55.095000,
-    "long": 10.242222,
+    "lat": 55.095085,
+    "lon": 10.242222,
     "population": 7049
   },
   {
@@ -245,8 +245,8 @@
     "zipcode": 5700,
     "municipality": "Svendborg",
     "region": "Syddanmark",
-    "lat": 55.059722,
-    "long": 10.610000,
+    "lat": 55.098237,
+    "lon": 10.23633,
     "population": 27210
   },
   {
@@ -256,7 +256,7 @@
     "municipality": "Nyborg",
     "region": "Syddanmark",
     "lat": 55.312222,
-    "long": 10.789722,
+    "lon": 10.789722,
     "population": 17164
   },
   {
@@ -266,7 +266,7 @@
     "municipality": "Kerteminde",
     "region": "Syddanmark",
     "lat": 55.449444,
-    "long": 10.660278,
+    "lon": 10.660278,
     "population": 5914
   },
   {
@@ -276,7 +276,7 @@
     "municipality": "Nordfyn",
     "region": "Syddanmark",
     "lat": 55.566667,
-    "long": 10.088889,
+    "lon": 10.088889,
     "population": 3891
   },
   {
@@ -285,8 +285,8 @@
     "zipcode": 3700,
     "municipality": "Bornholm",
     "region": "Hovedstaden",
-    "lat": 55.1,
-    "long": 14.7,
+    "lat": 55.097781,
+    "lon": 14.712761,
     "population": 13780
   },
   {
@@ -296,7 +296,7 @@
     "municipality": "Bornhom",
     "region": "Hovedstaden",
     "lat": 55.182778,
-    "long": 14.709722,
+    "lon": 14.709722,
     "population": 1622
   },
   {
@@ -306,7 +306,7 @@
     "municipality": "Bornholm",
     "region": "Hovedstaden",
     "lat": 55.208333,
-    "long": 14.972222,
+    "lon": 14.972222,
     "population": 723
   },
   {
@@ -316,7 +316,7 @@
     "municipality": "Bornholm",
     "region": "Hovedstaden",
     "lat": 55.136667,
-    "long": 15.142778,
+    "lon": 15.142778,
     "population": 1078
   },
   {
@@ -326,7 +326,7 @@
     "municipality": "Bornholm",
     "region": "Hovedstaden",
     "lat": 55.063611,
-    "long": 15.132222,
+    "lon": 15.132222,
     "population": 3644
   },
   {
@@ -336,7 +336,7 @@
     "municipality": "Bornholm",
     "region": "Hovedstaden",
     "lat": 55.072222,
-    "long": 14.922778,
+    "lon": 14.922778,
     "population": 2083
   },
   {
@@ -346,7 +346,7 @@
     "municipality": "Guldborgsund",
     "region": "Sjælland",
     "lat": 54.766667,
-    "long": 11.883333,
+    "lon": 11.883333,
     "population": 16770
   },
   {
@@ -355,8 +355,8 @@
     "zipcode": 4874,
     "municipality": "Guldborgsund",
     "region": "Sjælland",
-    "lat": 54.57558,
-    "long": 11.929830,
+    "lat": 54.575583,
+    "lon": 11.929831,
     "population": 731
   },
   {
@@ -365,8 +365,8 @@
     "zipcode": 4871,
     "municipality": "Guldborgsund",
     "region": "Sjælland",
-    "lat": 54.827241,
-    "long": 12.056480,
+    "lat": 54.821661,
+    "lon": 12.055491,
     "population": 583
   },
   {
@@ -376,17 +376,17 @@
     "municipality": "Guldborgsund",
     "region": "SJælland",
     "lat": 54.889722,
-    "long": 12.0375,
+    "lon": 12.037547,
     "population": 2304
   },
   {
     "id": 39,
-    "city": "Saxkøbing",
+    "city": "Sakskøbing",
     "zipcode": 4990,
     "municipality": "Guldborgsund",
     "region": "Sjælland",
-    "lat": 58.4,
-    "long": 11.633333,
+    "lat": 54.796741,
+    "lon": 11.635721,
     "population": 4670
   },
   {
@@ -396,7 +396,7 @@
     "municipality": "Lolland",
     "region": "Sjælland",
     "lat": 54.774722,
-    "long": 11.501111,
+    "lon": 11.501111,
     "population": 5830
   },
   {
@@ -406,7 +406,7 @@
     "municipality": "Lolland",
     "region": "Sjælland",
     "lat": 54.693611,
-    "long": 11.388333,
+    "lon": 11.388333,
     "population": 2066
   },
   {
@@ -416,7 +416,7 @@
     "municipality": "Lolland",
     "region": "Sjælland",
     "lat": 54.829722,
-    "long": 11.135556,
+    "lon": 11.135556,
     "population": 12691
   },
   {
@@ -426,7 +426,7 @@
     "municipality": "Slagelse",
     "region": "Sjælland",
     "lat": 55.330458,
-    "long": 11.142497,
+    "lon": 11.142497,
     "population": 14647
   },
   {
@@ -436,7 +436,7 @@
     "municipality": "Slagelse",
     "region": "Sjælland",
     "lat": 55.400833,
-    "long": 11.35,
+    "lon": 12.19718,
     "population": 33871
   },
   {
@@ -445,8 +445,8 @@
     "zipcode": 4230,
     "municipality": "Slagelse",
     "region": "Sjælland",
-    "lat": 55.253889,
-    "long": 11.290278,
+    "lat": 55.648817,
+    "lon": 11.348432,
     "population": 6470
   },
   {
@@ -455,8 +455,8 @@
     "zipcode": 4400,
     "municipality": "Kalundborg",
     "region": "Sjælland",
-    "lat": 55.681389,
-    "long": 11.085000,
+    "lat": 55.677728,
+    "lon":  11.089979,
     "population": 16370
   },
   {
@@ -465,8 +465,8 @@
     "zipcode": 4500,
     "municipality": "Odsherred",
     "region": "Sjælland",
-    "lat": 55.922500,
-    "long": 11.668611,
+    "lat": 55.677823,
+    "lon": 11.090523,
     "population": 5194
   },
   {
@@ -476,17 +476,17 @@
     "municipality": "Odsherrede",
     "region": "Sjælland",
     "lat": 55.851667,
-    "long": 11.581389,
+    "lon": 11.581389,
     "population": 1539
   },
   {
     "id": 49,
     "city": "Holbæk",
-    "zipcode": 43000,
+    "zipcode": 4300,
     "municipality": "Holbæk",
     "region": "Sjælland",
     "lat": 55.719444,
-    "long": 11.713333,
+    "lon": 11.713333,
     "population": 28538
   },
   {
@@ -496,7 +496,7 @@
     "municipality": "Holbæk",
     "region": "Sjælland",
     "lat": 55.721667,
-    "long": 11.456667,
+    "lon": 11.456667,
     "population": 2873
   },
   {
@@ -506,7 +506,7 @@
     "municipality": "Holbæk",
     "region": "Sjælland",
     "lat": 55.611667,
-    "long": 11.773611,
+    "lon": 11.773611,
     "population": 3798
   },
   {
@@ -516,7 +516,7 @@
     "municipality": "Sorø",
     "region": "Sjælland",
     "lat": 55.438477,
-    "long": 11.559951,
+    "lon": 11.559951,
     "population": 7958
   },
   {
@@ -526,7 +526,7 @@
     "municipality": "Ringsted",
     "region": "Sjælland",
     "lat": 55.442593,
-    "long": 11.790031,
+    "lon": 11.790031,
     "population": 22657
   },
   {
@@ -536,7 +536,7 @@
     "municipality": "Næstved",
     "region": "Sjælland",
     "lat": 55.229444,
-    "long": 11.756667,
+    "lon": 11.756667,
     "population": 43440
   },
   {
@@ -546,7 +546,7 @@
     "municipality": "Vordingborg",
     "region": "Sjælland",
     "lat": 55.011111,
-    "long": 11.908333,
+    "lon": 11.908333,
     "population": 12005
   },
   {
@@ -556,7 +556,7 @@
     "municipality": "Køge",
     "region": "Sjælland",
     "lat": 55.456111,
-    "long": 12.179722,
+    "lon": 12.179722,
     "population": 37557
   },
   {
@@ -566,7 +566,7 @@
     "municipality": "Køge",
     "region": "Sjælland",
     "lat": 55.416111,
-    "long": 12.141944,
+    "lon": 12.141944,
     "population": 7000
   },
   {
@@ -576,7 +576,7 @@
     "municipality": "Roskilde",
     "region": "Sjælland",
     "lat": 55.641667,
-    "long": 12.080833,
+    "lon": 12.080833,
     "population": 51121
   },
   {
@@ -585,8 +585,8 @@
     "zipcode": 4040,
     "municipality": "Roskilde",
     "region": "Sjælland",
-    "lat": 55.751060,
-    "long": 12.106421,
+    "lat": 55.751061,
+    "lon": 12.106421,
     "population": 10105
   },
   {
@@ -596,7 +596,7 @@
     "municipality": "København",
     "region": "Hovedstaden",
     "lat": 55.676111,
-    "long": 12.568889,
+    "lon": 12.568889,
     "population": 613288
   },
   {
@@ -605,8 +605,8 @@
     "zipcode": 2000,
     "municipality": "Frederiksberg",
     "region": "Hovedstaden",
-    "lat": 55.677500,
-    "long":  12.533889,
+    "lat": 55.677515,
+    "lon":  12.533889,
     "population": 103960
   },
   {
@@ -615,8 +615,8 @@
     "zipcode": 3600,
     "municipality": "Frederikssund",
     "region": "Hovedstaden",
-    "lat": 55.837500,
-    "long": 12.062500,
+    "lat": 55.837515,
+    "lon": 12.062523,
     "population": 16268
   },
   {
@@ -626,7 +626,7 @@
     "municipality": "Halsnæs",
     "region": "Hovedstaden",
     "lat": 55.966667,
-    "long": 12.016667,
+    "lon": 12.016667,
     "population": 12549
   },
   {
@@ -636,7 +636,7 @@
     "municipality": "Halsnæs",
     "region": "Hovedstaden",
     "lat": 55.963611,
-    "long": 11.852500,
+    "lon": 11.852508,
     "population": 8613
   },
   {
@@ -646,7 +646,7 @@
     "municipality": "Gribskov",
     "region": "Hovedstaden",
     "lat": 56.022222,
-    "long": 12.197222,
+    "lon": 12.197222,
     "population": 8288
   },
   {
@@ -655,8 +655,8 @@
     "zipcode": 3000,
     "municipality": "Helsingør",
     "region": "Hovedstaden",
-    "lat": 56.035000,
-    "long": 12.606667,
+    "lat": 56.037062,
+    "lon": 12.613063,
     "population": 47346
   },
   {
@@ -665,8 +665,8 @@
     "zipcode": 3400,
     "municipality": "Hillerød",
     "region": "Hovedstaden",
-    "lat": 55.933333,
-    "long": 12.300000,
+    "lat": 55.930331,
+    "lon": 12.295771,
     "population": 33079
   },
   {
@@ -675,8 +675,8 @@
     "zipcode": 3050,
     "municipality": "Fredensborg",
     "region": "Hovedstaden",
-    "lat": 55.961111,
-    "long": 12.525000,
+    "lat": 55.963661,
+    "lon": 12.531367,
     "population": 9657
   },
   {
@@ -686,7 +686,7 @@
     "municipality": "Rudersdal",
     "region": "Hovedstaden",
     "lat": 55.840692,
-    "long": 12.423959,
+    "lon": 12.423959,
     "population": 20740
   },
   {
@@ -696,7 +696,7 @@
     "municipality": "Esbjerg",
     "region": "Syddanmark",
     "lat": 55.470833,
-    "long": 8.451389,
+    "lon": 8.451389,
     "population": 72168
   },
   {
@@ -706,7 +706,7 @@
     "municipality": "Randers",
     "region": "Midtjylland",
     "lat": 56.456944,
-    "long": 10.039167,
+    "lon": 10.039167,
     "population": 62586
   },
   {
@@ -716,7 +716,7 @@
     "municipality": "Kolding",
     "region": "Syddanmark",
     "lat": 55.490833,
-    "long": 9.472222,
+    "lon": 9.472222,
     "population": 60854
   },
   {
@@ -726,7 +726,7 @@
     "municipality": "Horsens",
     "region": "Midtjylland",
     "lat": 55.861944,
-    "long": 9.851944,
+    "lon": 9.851944,
     "population": 59370
   },
   {
@@ -736,7 +736,7 @@
     "municipality": "Hørsholm",
     "region": "Hovedstaden",
     "lat": 55.878611,
-    "long": 12.499167,
+    "lon": 12.499167,
     "population": 47487
   },
   {
@@ -745,18 +745,18 @@
     "zipcode": 8600,
     "municipality": "Silkeborg",
     "region": "Midtjylland",
-    "lat": 56.166667,
-    "long": 9.550000,
+    "lat": 56.164315,
+    "lon": 9.544139,
     "population": 46179
   },
   {
     "id": 76,
     "city": "Viborg",
-    "zipcode": 0,
+    "zipcode": 8800,
     "municipality": "Viborg",
     "region": "Midtjylland",
-    "lat": 56.450000,
-    "long": 9.400000,
+    "lat": 56.450392,
+    "lon": 9.413044,
     "population": 40768
   },
   {
@@ -765,8 +765,8 @@
     "zipcode": 2630,
     "municipality": "Tåstrup",
     "region": "Hovedstaden",
-    "lat": 55.650000,
-    "long": 12.300000,
+    "lat": 55.65256,
+    "lon": 12.302201,
     "population": 34248
   },
   {
@@ -775,8 +775,8 @@
     "zipcode": 9800,
     "municipality": "Hjørring",
     "region": "Nordjylland",
-    "lat": 57.460000,
-    "long": 9.986667,
+    "lat": 57.456382,
+    "lon": 9.985559,
     "population": 25815
   },
   {
@@ -786,7 +786,7 @@
     "municipality": "Aalborg",
     "region": "Nordjylland",
     "lat": 57.058333,
-    "long": 9.922778,
+    "lon": 9.922778,
     "population": 23108
   },
   {
@@ -796,7 +796,7 @@
     "municipality": "Haderslev",
     "region": "Syddanmark",
     "lat": 55.250008,
-    "long": 9.488040,
+    "lon": 9.488047,
     "population": 22011
   },
   {
@@ -806,7 +806,7 @@
     "municipality": "Egedal",
     "region": "Hovedstaden",
     "lat": 55.766667,
-    "long": 12.183333,
+    "lon": 12.183333,
     "population": 22030
   },
   {
@@ -816,7 +816,7 @@
     "municipality": "Skive",
     "region": "Midtjylland",
     "lat": 56.566667,
-    "long":  9.026944,
+    "lon":  9.026944,
     "population": 20599
   },
   {
@@ -826,17 +826,17 @@
     "municipality": "Furesø",
     "region": "Hovedstaden",
     "lat": 55.808333,
-    "long": 12.358056,
+    "lon": 12.358056,
     "population": 20372
   },
   {
     "id": 84,
-    "city": "Smørumnedre",
+    "city": "Måløv",
     "zipcode": 2765,
     "municipality": "Egedal",
     "region": "Hovedstaden",
-    "lat": 55.733333,
-    "long": 12.300000,
+    "lat": 55.747543,
+    "lon": 12.317837,
     "population": 19925
   },
   {
@@ -846,7 +846,7 @@
     "municipality": "Skanderborg",
     "region": "Midtjylland",
     "lat": 56.033333,
-    "long": 9.932500,
+    "lon": 9.932522,
     "population": 19185
   },
   {
@@ -856,7 +856,7 @@
     "municipality": "Allerød",
     "region": "Hovedstaden",
     "lat": 55.868611,
-    "long": 12.344167,
+    "lon": 12.344167,
     "population": 16906
   },
   {
@@ -866,7 +866,7 @@
     "municipality": "Aabenraa",
     "region": "Syddanmark",
     "lat": 55.044444,
-    "long": 9.418056,
+    "lon": 9.418056,
     "population": 16352
   },
   {
@@ -876,7 +876,7 @@
     "municipality": "Solrød",
     "region": "Hovedstaden",
     "lat": 55.531944,
-    "long": 12.219444,
+    "lon": 12.219444,
     "population": 16687
   },
   {
@@ -886,7 +886,7 @@
     "municipality": "Norddjurs",
     "region": "Midtjylland",
     "lat": 56.413333,
-    "long": 10.875833,
+    "lon": 10.875833,
     "population": 14437
   },
   {
@@ -895,8 +895,8 @@
     "zipcode": 6800,
     "municipality": "Varde",
     "region": "Syddanmark",
-    "lat": 55.620000,
-    "long": 8.480556,
+    "lat": 55.615967,
+    "lon": 8.480556,
     "population": 13989
   },
   {
@@ -906,7 +906,7 @@
     "municipality": "Thisted",
     "region": "Nordjylland",
     "lat": 56.955833,
-    "long":  8.692500,
+    "lon":  8.692586,
     "population": 13423
   },
   {
@@ -916,7 +916,7 @@
     "municipality": "Furesø",
     "region": "Hovedstaden",
     "lat": 55.781944,
-    "long": 12.373056,
+    "lon": 12.373056,
     "population": 12977
   },
   {
@@ -926,7 +926,7 @@
     "municipality": "Brønderslev",
     "region": "Nordjylland",
     "lat": 57.269444,
-    "long": 9.947222,
+    "lon": 9.947222,
     "population": 12581
   },
   {
@@ -935,8 +935,8 @@
     "zipcode": 8300,
     "municipality": "Odder",
     "region": "Midtjylland",
-    "lat": 55.972500,
-    "long": 10.149722,
+    "lat": 55.972562,
+    "lon": 10.149722,
     "population": 12237
   },
   {
@@ -945,8 +945,8 @@
     "zipcode": 2791,
     "municipality": "Dragør",
     "region": "Hovedstaden",
-    "lat": 55.592500,
-    "long": 12.672222,
+    "lat": 55.592582,
+    "lon": 12.672222,
     "population": 12124
   },
   {
@@ -956,7 +956,7 @@
     "municipality": "Mariagerfjord",
     "region": "Nordjylland",
     "lat": 56.636944,
-    "long": 9.794167,
+    "lon": 9.794167,
     "population": 12083
   },
   {
@@ -965,8 +965,8 @@
     "zipcode": 2640,
     "municipality": "Høje-Tåstrup",
     "region": "Hovedstaden",
-    "lat": 55.650000,
-    "long": 12.198611,
+    "lat": 55.648813,
+    "lon": 12.197184,
     "population": 12250
   },
   {
@@ -976,7 +976,7 @@
     "municipality": "Faxe",
     "region": "Sjælland",
     "lat": 55.329191,
-    "long":  11.961008,
+    "lon":  11.961008,
     "population": 11897
   },
   {
@@ -986,7 +986,7 @@
     "municipality": "Struer",
     "region": "Midtjylland",
     "lat": 56.491667,
-    "long": 8.594444,
+    "lon": 8.594444,
     "population": 10301
   }
 

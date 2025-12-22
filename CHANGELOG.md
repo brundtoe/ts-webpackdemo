@@ -1,5 +1,10 @@
 # Changelog
 
+## 22. december 2025
+
+Ændringer
+- cities.json opdatering hvor feltet long er omdøbt til lon
+
 ## 14. december 2025
 Ændringer
 - Filen geoloc.cities.json renamed til cities.json
