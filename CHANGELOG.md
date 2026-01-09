@@ -1,5 +1,9 @@
 # Changelog
 
+## 9. januar 2026
+
+npm update og test med cypress running victoria devserver
+
 ## 22. december 2025
 
 Ændringer
