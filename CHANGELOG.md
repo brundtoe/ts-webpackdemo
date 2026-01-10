@@ -1,5 +1,9 @@
 # Changelog
 
+## 10. januar 2026
+
+Cypress opdateret til 15.8.2 og testes ok
+
 ## 9. januar 2026
 
 npm update og test med cypress running victoria devserver
