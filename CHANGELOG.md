@@ -1,5 +1,10 @@
 # Changelog
 
+## 8. marts 2026
+
+Ændringer
+- bookstore json data ændret pris for book 21 til 35.95
+
 ## 10. januar 2026
 
 Cypress opdateret til 15.8.2 og testes ok
