@@ -1,5 +1,10 @@
 # Changelog
 
+## 22. marts 2026
+
+Ændringer
+- Cypress opdateret til 15.12.0 og scripts renamed fra cy.mjs til spec.mjs
+
 ## 8. marts 2026
 
 Ændringer
