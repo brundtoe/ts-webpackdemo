@@ -9,13 +9,7 @@ import './ajaxcallback'
 import './cdalbum'
 import './fetch-component'
 
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOMContentLoaded', 'page-xmlhttp')
-    hideAll()
 
-    submitFormular()
-
-})
 
 let submitFormular = () => {
 
@@ -38,7 +32,11 @@ let submitFormular = () => {
 
 
 let hideAll = () => {
-    docElement.renderHtml('error','')
+    docElement.renderHtml('error', '')
     const container = <HTMLElement>document.querySelector('#container')
     container.innerHTML = ''
 }
+
+console.log('DOMContentLoaded', 'page-xmlhttp')
+hideAll()
+submitFormular()

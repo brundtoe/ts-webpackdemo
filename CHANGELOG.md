@@ -1,5 +1,9 @@
 # Changelog
 
+## 6. oktober 2026
+
+Fjernet overflødige anvendelse af DOMContentLoad i script tags type="module"
+
 ## 22. marts 2026
 
 Ændringer

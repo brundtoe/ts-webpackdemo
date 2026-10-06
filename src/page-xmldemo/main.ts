@@ -5,10 +5,6 @@ import './page.css'
 import {LitElement, html, css, TemplateResult} from 'lit'
 import Pattern from './moduler/pattern'
 
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOMContentLoaded', 'page-xmldemo')
-})
-
 class AuthorsXmldemo extends LitElement {
 
     protected pattern: Pattern
